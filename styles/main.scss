@@ -221,6 +221,7 @@ header {
         text-transform: $text-transform_capitalize;
         padding: 10px;
         transition: 0.3s;
+        width: 40px;
 
         &:hover {
             color: $neutral_white;

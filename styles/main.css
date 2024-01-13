@@ -254,6 +254,7 @@ header .active:hover {
   text-transform: capitalize;
   padding: 10px;
   transition: 0.3s;
+  width: 40px;
 }
 .header_nav_bar_drodpdown_container .header_nav_bar_drodpdown_container_link:hover {
   color: #fbfafa;
