@@ -324,4 +324,99 @@ header .active:hover {
 }
 
 /* nav_bar_dropdown_end */
-/* header_end *//*# sourceMappingURL=main.css.map */
+/* header_end */
+.section_presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/connection.jpg");
+  min-height: 100vh;
+}
+@media (min-width: 375px) {
+  .section_presentation {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 779px) {
+  .section_presentation {
+    margin-top: 15px;
+  }
+}
+
+.section_presentation_introduction {
+  width: 100%;
+  margin: 0 10px;
+}
+.section_presentation_introduction .section_presentation_introduction_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+}
+@media (max-width: 779px) {
+  .section_presentation_introduction .section_presentation_introduction_title {
+    margin: 30px 0;
+  }
+}
+.section_presentation_introduction .section_presentation_introduction_subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  width: 70%;
+  margin: 35px auto;
+  text-align: center;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+.section_presentation_introduction .section_presentation_introduction_subtitle .subtitle_strong {
+  color: #1786F9;
+}
+
+.section_presentation_list_advantage {
+  border-radius: 5px;
+  border: 2px solid #fbfafa;
+  background: #1786F9;
+  padding: 10px;
+  width: 40%;
+  min-width: 330px;
+  box-shadow: 0 0 10px #1786F9;
+}
+.section_presentation_list_advantage .section_presentation_list_advantage_menu_item {
+  padding: 10px;
+}
+.section_presentation_list_advantage .section_presentation_list_advantage_menu_item i {
+  padding-right: 4px;
+  color: #fbfafa;
+}
+
+.section_presentation_link {
+  margin-top: 40px;
+}
+
+.section_presentation_link_download_app {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  border-radius: 25px;
+  border: 1px solid #1786F9;
+  padding: 15px 25px;
+  transition: 0.3s;
+}
+.section_presentation_link_download_app:hover {
+  background: #1786F9;
+  box-shadow: 0 0 10px #00FEFB;
+}
+
+/* section_exchange_presentation_end *//*# sourceMappingURL=main.css.map */
