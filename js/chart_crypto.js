@@ -14,7 +14,7 @@ function showChartIfVisible() {
 
     if (isElementInViewport(chartContainer)) {
         new Chart(chartContainer, {
-            type: 'doughnut',
+            type: 'pie',
             data: {
                 labels: ['Bitcoin', 'Ethereum', 'Solana', 'Chainlink', 'Polygon', 'Stacks'],
                 datasets: [{
