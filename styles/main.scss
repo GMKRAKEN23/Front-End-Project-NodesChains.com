@@ -304,10 +304,11 @@ header {
     @include flex-container($flex_direction_column,
         $justify_content_space_evenly,
         $align_items_center);
+
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_no_repeat);
-    background-image: url("../assets/connection.jpg");
+    background-image: url("/asset/connection.jpg");
     min-height: 100vh;
 }
 
@@ -317,7 +318,7 @@ header {
 
     .section_presentation_introduction_title {
         @include media-maxwidth($tablet_size) {
-            margin: 30px 0;
+            margin: 5%;
         }
 
         @include text-custom($font_size_2_5,
@@ -347,6 +348,11 @@ header {
 }
 
 .section_presentation_list_advantage {
+    @include media-minwidth($smartphone_size) {
+        margin-right: 20px;
+    }
+
+    ;
     @include border-properties($border_solid,
         $border_width_2,
         $neutral_white,
@@ -378,6 +384,7 @@ header {
         $text_transform_capitalize,
         $letter_spacing_strong);
     text-transform: $text-transform_capitalize;
+
     @include border-properties($border_solid,
         $border_width_1,
         $primary-color-light-cyan,
@@ -392,3 +399,175 @@ header {
 }
 
 /* section_exchange_presentation_end */
+
+/* section_buy_crypto */
+
+.section_buy_crypto {
+    @include flex-container($direction: $flex_direction_column);
+    @include background-properties($background_size_cover,
+        $background_position_center,
+        $background_repeat);
+    background-image: url("/asset/connection_2.jpg");
+    @include media-maxwidth($deskop_size){
+        margin: 70px 0;
+    }
+}
+
+.section_buy_crypto_container {
+    @include flex-container($flex_direction_row,
+        $justify_content_space_around,
+        $align_items_center,
+        $flex_wrap);
+
+    @include media-maxwidth($deskop_size) {
+        min-height: 60vh;
+    }
+    min-height: 100vh;
+    width: 100%;
+}
+
+.section_buy_crypto_title {
+    @include text-custom($font_size_2,
+        $font_weight_medium,
+        $neutral_white,
+        $text_transform_capitalize,
+        $letter_spacing_medium);
+    text-align: $text_align_center;
+    @include media-maxwidth($deskop_size){
+        padding: 20px;
+    }
+}
+
+.section_buy_crypto_container_advantage {
+    @include flex-container($flex_direction_column);
+
+    @include media-maxwidth($deskop_size) {
+        width: 80%;
+        text-align: center;
+    }
+
+    width: 40%;
+
+
+    .section_buy_crypto_container_advantage_text {
+        @include text-custom($font_size_1_2,
+            $font_weight_medium,
+            $neutral_white,
+            $text_transform_none,
+            $letter_spacing_medium);
+        line-height: 1.5;
+        margin: 10px;
+    }
+
+    .section_buy_crypto_container_advantage_link {
+        @include border-properties($border_solid,
+            $border_width_1,
+            $primary-color-light-cyan,
+            $border_radius_10);
+        background: $background_transparent;
+        text-align: $text_align_center;
+        color: $neutral_white;
+        transition: 0.5s;
+        margin-top: 20px;
+        padding: 15px 20px;
+
+        &:hover {
+            background: $primary_color_light_cyan;
+            box-shadow: 0 0 10px $primary_color_bright_light_cyan;
+        }
+    }
+}
+
+/* section_buy_crypto card_bank */
+
+.section_buy_crypto .article_card_bank {
+    @include flex-container($flex_direction_column,
+        $justify_content_space_between,
+        $align_items_center);
+    @include dimensions($width: 100%, $height: 250px);
+    @include border-properties($border_solid,
+        $border_width_2,
+        $primary-color-light-cyan,
+        $border_radius_20);
+    background: $strong_black;
+
+    @include media-maxwidth($deskop_size) {
+        display: none;
+    }
+
+    min-width: 370px;
+    max-width: 500px;
+    filter: brightness(120%);
+    box-shadow: 0 0 5px #c5c5c5;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        box-shadow: 0 0 5px #c5c5c5;
+        transform: translateY(0);
+    }
+
+    50% {
+        box-shadow: 0 0 15px #c5c5c5;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        box-shadow: 0 0 5px #c5c5c5;
+    }
+}
+
+.article_header_card_bank {
+    @include flex-container($flex-direction_row, $justify_content_space_between);
+    width: 90%;
+    padding: 10px;
+
+    .article_header_card_bank_number {
+        @include text-custom($font_size_1_1,
+            $font_weight_normal,
+            $neutral_white,
+            $text_transform_none,
+            $letter_spacing_strong);
+        margin: 0 15px;
+    }
+
+    .article_header_card_bank_code {
+        @include text-custom($font_size_1_1,
+            $font_weight_normal,
+            $neutral_white,
+            $text_transform_none,
+            $letter_spacing_strong);
+        margin: 0 15px;
+    }
+}
+
+.article_card_bank_image {
+    @include flex-container($align_items_center);
+    width: 100%;
+
+    .article_card_bank_logo {
+        padding-left: 110px;
+    }
+}
+
+.article_footer_card_bank {
+    @include flex-container($flex-direction_row, $justify_content_space_between);
+    width: 90%;
+    color: $neutral_white;
+    letter-spacing: $letter_spacing_strong;
+
+    .article_footer_card_bank_name {
+        margin: 15px;
+        font-size: $font_size_1_1;
+    }
+
+    .article_footer_card_bank_title {
+        margin: 15px;
+        font-size: $font_size_1_5;
+    }
+}
+
+/* section_buy_crypto card_bank_end */
+
+/* section_buy_crypto_end */
