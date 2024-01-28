@@ -584,7 +584,6 @@ header {
 
 .section_promotion_nft {
     width: 100%;
-    min-height: 100vh;
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
@@ -770,3 +769,161 @@ header {
 /* container_timer_end */
 
 /* section_section_promotion_nft */
+
+/* section_service_company */
+
+.section_service_company {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .section_service_company_container {
+        margin: 0 5%;
+        width: 90%;
+
+        .section_service_company_container_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .section_service_company_container_header_title {
+                @include text-custom($font_size_2,
+                    $font_weight_normal,
+                    $neutral_white,
+                    $text_transform_none,
+                    $letter_spacing_medium);
+
+                &:first-letter {
+                    text-transform: capitalize;
+                }
+            }
+
+            .section_service_company_container_header_menu {
+                position: relative;
+                list-style: none;
+                display: flex;
+                margin: 30px 0;
+            }
+
+            .section_service_company_container_header_menu_link {
+                display: block;
+                margin: 0 5px;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                @include text-custom($font_size_1_1,
+                    $font_weight_normal,
+                    $neutral_white,
+                    $text_transform_none,
+                    $letter_spacing_strong);
+                border: 2px solid $primary-color-light-cyan;
+                border-radius: $border_radius_10;
+                text-align: $text_align_center;
+                position: relative;
+                transition: all .5s;
+
+                span {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background: $primary_color_light_cyan;
+                    transition: all .35s;
+                    border-radius: $border_radius_10;
+                }
+
+                &:hover {
+                    color: $neutral_white;
+                    box-shadow: 0 0 50px $primary-color-light-cyan;
+                    background: $primary-color-light-cyan;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .section_service_swicth_container {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+        width: 90%;
+
+        .section_service_swicth_container_article {
+            width: 1100px;
+            height: 400px;
+            display: flex;
+            border: solid 1px $neutral_white;
+            border-radius: $border_radius_10;
+            box-shadow: 0 0 20px $neutral_white;
+            @include media-maxwidth($tablet_size){
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+
+            }
+
+            .section_service_swicth_container_article_image {
+                border-bottom-left-radius: $border_radius_10;
+                border-top-left-radius: $border_radius_10;
+                z-index: -1;
+            }
+        }
+
+        .section_service_swicth_container_article_description {
+            display: flex;
+            justify-content: $justify_content_space_around;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+
+            .section_service_swicth_container_article_description_title {
+                @include text-custom($font_size_2,
+                    $font_weight_medium,
+                    $primary_color_bright_light_cyan,
+                    $text_transform_none,
+                    $letter_spacing_medium);
+            }
+
+            .section_service_swicth_container_article_description_paragraph {
+                @include text-custom($font_size_1_2,
+                    $font_weight_normal,
+                    $neutral_white,
+                    $text_transform_none,
+                    $letter_spacing_light);
+                padding: 0 10%;
+                text-align: justify;
+                text-justify: distribute;
+                line-height: 1.3;
+            }
+
+            .section_service_swicth_container_article_description_link {
+                @include text-custom($font_size_1_2,
+                    $font_weight_normal,
+                    $neutral_white,
+                    $text_transform_none,
+                    $letter_spacing_medium);
+                text-decoration: underline;
+                transition: 0.5s;
+
+                &:hover {
+                    color: $primary_color_bright_light_cyan;
+                }
+            }
+        }
+    }
+}
+
+/* section_service_company_end */
