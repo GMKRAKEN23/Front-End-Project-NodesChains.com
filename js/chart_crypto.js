@@ -22,15 +22,26 @@ function showChartIfVisible() {
                     data: [30, 30, 10, 10, 10, 10],
                     borderWidth: 1,
                     backgroundColor: [
-                        '#ffaa00', '#322f2f', '#00ffcc', '#4e7cff', '#8247e5', '#6e0d6e'
+                        '#00BFFF', '#FFA07A', '#00FF00', '#9400D3', '#FFFF00', '#FF4040'
                     ],
                     borderColor: '#fbfafa',
                 }]
             },
             options: {
                 plugins: {
+                    legend :{
+                        display: false,
+                    },
                     colors: {
-                        enabled: false
+                        enabled: true
+                    },
+                    layout: {
+                        padding: 15
+                    },
+                    labels: {
+                        fontColor: '#fff',
+                        position: 'outside',
+                        textMargin: 7,
                     }
                 },
                 animation: {

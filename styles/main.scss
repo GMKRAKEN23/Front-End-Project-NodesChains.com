@@ -7,6 +7,23 @@
 // mixins
 @import 'mixins';
 
+.support_message{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 10;
+    transition: 0.3s;
+    .bxs-message-rounded-dots{
+        font-size: 3rem;
+        color: $neutral_white;
+        cursor: pointer;
+        &:hover{
+            color: $primary_color_bright_light_cyan;
+        }
+    }
+
+}
+
 body {
     @include dimensions($width: 100%, $height: auto);
     background: #04060a;
@@ -585,6 +602,65 @@ header {
 
 /* section_buy_crypto_end */
 
+/* section_most_traded_cryptocurrencies */
+
+.section_most_traded_cryptocurrencies{
+    width: 100%;
+    min-height: 80vh;
+
+    .section_most_traded_cryptocurrencies_title{
+        @include text-custom($font_size_2,
+        $font_weight_medium,
+        $neutral_white,
+        $text_transform_capitalize,
+        $letter_spacing_strong);
+    text-align: $text_align_center;
+    margin: 20px 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section_most_traded_cryptocurrencies_container{
+    border-radius: $border_radius_25;
+    border: solid 2px $primary_color_bright_light_cyan;
+    box-shadow: 0 0 10px $primary-color-light-cyan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    .section_most_traded_cryptocurrencies_container_legend_title{
+        margin: 20px;
+        font-weight: $font_weight_normal;
+        @include text-custom($font_size_1_2,
+        $font_weight_strong,
+        $primary_color_bright_light_cyan,
+        $text_transform_capitalize,
+        $letter_spacing_medium);
+    text-align: $text_align_left;
+    }
+    .section_most_traded_cryptocurrencies_container_legend_list{
+        display: flex;
+        flex-direction: column;
+        .section_most_traded_cryptocurrencies_container_legend_item{
+            margin: 20px;
+            font-weight: $font_weight_normal;
+            @include text-custom($font_size_1_2,
+            $font_weight_normal,
+            $neutral_white,
+            $text_transform_capitalize,
+            $letter_spacing_medium);
+        text-align: $text_align_left;
+        }
+    }
+}
+
+/* section_most_traded_cryptocurrencies_end */
+
 /* section_section_promotion_nft */
 
 .section_promotion_nft {
@@ -633,6 +709,7 @@ header {
     }
 
     .section_promotion_nft_container_promotion_subtitle {
+        margin-top: 20px;
         @include media-maxwidth($deskop_size) {
             margin: 20px auto;
             line-height: 1.4;
@@ -1183,8 +1260,5 @@ header {
         }    
     }
 }
-
-
-
 
 /* footer_end */

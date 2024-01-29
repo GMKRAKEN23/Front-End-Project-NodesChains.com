@@ -48,6 +48,22 @@ table {
   border-spacing: 0;
 }
 
+.support_message {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 10;
+  transition: 0.3s;
+}
+.support_message .bxs-message-rounded-dots {
+  font-size: 3rem;
+  color: #fbfafa;
+  cursor: pointer;
+}
+.support_message .bxs-message-rounded-dots:hover {
+  color: #00FEFB;
+}
+
 body {
   width: 100%;
   height: auto;
@@ -617,6 +633,61 @@ header .active:hover {
 
 /* section_buy_crypto card_bank_end */
 /* section_buy_crypto_end */
+/* section_most_traded_cryptocurrencies */
+.section_most_traded_cryptocurrencies {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.section_most_traded_cryptocurrencies .section_most_traded_cryptocurrencies_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section_most_traded_cryptocurrencies_container {
+  border-radius: 25px;
+  border: solid 2px #00FEFB;
+  box-shadow: 0 0 10px #1786F9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  width: 900px;
+  height: 500px;
+  padding: 20px;
+}
+.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_title {
+  margin: 20px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #00FEFB;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list {
+  display: flex;
+  flex-direction: column;
+}
+.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list .section_most_traded_cryptocurrencies_container_legend_item {
+  margin: 20px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+/* section_most_traded_cryptocurrencies_end */
 /* section_section_promotion_nft */
 .section_promotion_nft {
   width: 100%;
@@ -665,6 +736,7 @@ header .active:hover {
   }
 }
 .section_promotion_nft_container_promotion .section_promotion_nft_container_promotion_subtitle {
+  margin-top: 20px;
   font-size: 1.2rem;
   font-weight: 700;
   color: #fbfafa;

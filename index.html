@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="styles/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
+
+    <div class="support_message">
+        <i class='bx bxs-message-rounded-dots' ></i>
+    </div>
 
     <!-- header -->
     <header class="header">
@@ -377,6 +382,24 @@
     </section>
     <!-- section_crypto_list_end -->
 
+    <section class="section_most_traded_cryptocurrencies">
+        <h2 class="section_most_traded_cryptocurrencies_title">most traded cryptocurrencies</h2>
+        <div class="section_most_traded_cryptocurrencies_container">
+            <div class="section_most_traded_cryptocurrencies_container_legend">
+                <h2 class="section_most_traded_cryptocurrencies_container_legend_title">Cryptocurrencies Legend</h2>
+                <ul class="section_most_traded_cryptocurrencies_container_legend_list">
+                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="30">Bitcoin: 30%</span></li>
+                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="30">Ethereum: 30%</span></li>
+                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Solana: 10%</span></li>
+                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Chainlink: 10%</span></li>
+                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Polygon: 10%</span></li>
+                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Stacks: 10%</span></li>
+                </ul>
+            </div>
+            <canvas id="chart_crypto" class="section_most_traded_cryptocurrencies_container_my_chart"></canvas>
+        </div>
+    </section>
+    
     <!-- section_footer -->
     <footer class="footer">
         <hr>
@@ -415,9 +438,17 @@
             </div>
 
             <div class="foo">
-                <h2>lkl</h2>
-                <h2>lk</h2>
-                <h2>lkl</h2>
+                <h2><a href="">News</a></h2>
+                <h2>FAQ</h2>
+                <h2>Jobs</h2>
+                <h2>Support</h2>
+            </div>
+
+            <div class="ff">
+                <h2><a href=""></a></h2>
+                <h2><a href=""></a></h2>
+                <h2><a href=""></a></h2>
+                <h2><a href=""></a></h2>
             </div>
         </div>
 
@@ -425,7 +456,9 @@
     </footer>
     <!-- section_footer_end -->
 
-    <script src="js/script.js" type="module"></script>
+    <script type="text/javascript" src="js/chart_crypto.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+    <script type="module" src="js/script.js" ></script>
 </body>
 
 </html>
