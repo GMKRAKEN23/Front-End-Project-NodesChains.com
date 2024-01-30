@@ -72,3 +72,6 @@ function initialize() {
 }
 
 window.onload = initialize;
+
+
+export { isElementInViewport, showChartIfVisible, initialize }

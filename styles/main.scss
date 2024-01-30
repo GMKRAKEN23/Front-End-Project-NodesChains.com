@@ -7,21 +7,33 @@
 // mixins
 @import 'mixins';
 
-.support_message{
+.support_message {
     position: fixed;
     bottom: 5%;
     right: 3%;
     z-index: 10;
     transition: 0.3s;
-    .bxs-message-rounded-dots{
+
+    .bxs-message-rounded-dots {
         font-size: 3rem;
         color: $neutral_white;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             color: $primary_color_bright_light_cyan;
         }
     }
 
+}
+
+.reactive_additional_information_section{
+    position: fixed;
+    width: 20%;
+    right: 0%;
+    min-height: 1000px;
+    height: 100%;
+    background: red;
+    z-index: 100;
 }
 
 body {
@@ -604,25 +616,25 @@ header {
 
 /* section_most_traded_cryptocurrencies */
 
-.section_most_traded_cryptocurrencies{
+.section_most_traded_cryptocurrencies {
     width: 100%;
     min-height: 80vh;
 
-    .section_most_traded_cryptocurrencies_title{
+    .section_most_traded_cryptocurrencies_title {
         @include text-custom($font_size_2,
-        $font_weight_medium,
-        $neutral_white,
-        $text_transform_capitalize,
-        $letter_spacing_strong);
-    text-align: $text_align_center;
-    margin: 20px 0;
+            $font_weight_medium,
+            $neutral_white,
+            $text_transform_capitalize,
+            $letter_spacing_strong);
+        text-align: $text_align_center;
+        margin: 20px 0;
     }
 
     display: flex;
     flex-direction: column;
 }
 
-.section_most_traded_cryptocurrencies_container{
+.section_most_traded_cryptocurrencies_container {
     border-radius: $border_radius_25;
     border: solid 2px $primary_color_bright_light_cyan;
     box-shadow: 0 0 10px $primary-color-light-cyan;
@@ -633,28 +645,31 @@ header {
     width: 900px;
     height: 500px;
     padding: 20px;
-    .section_most_traded_cryptocurrencies_container_legend_title{
+
+    .section_most_traded_cryptocurrencies_container_legend_title {
         margin: 20px;
         font-weight: $font_weight_normal;
         @include text-custom($font_size_1_2,
-        $font_weight_strong,
-        $primary_color_bright_light_cyan,
-        $text_transform_capitalize,
-        $letter_spacing_medium);
-    text-align: $text_align_left;
-    }
-    .section_most_traded_cryptocurrencies_container_legend_list{
-        display: flex;
-        flex-direction: column;
-        .section_most_traded_cryptocurrencies_container_legend_item{
-            margin: 20px;
-            font-weight: $font_weight_normal;
-            @include text-custom($font_size_1_2,
-            $font_weight_normal,
-            $neutral_white,
+            $font_weight_strong,
+            $primary_color_bright_light_cyan,
             $text_transform_capitalize,
             $letter_spacing_medium);
         text-align: $text_align_left;
+    }
+
+    .section_most_traded_cryptocurrencies_container_legend_list {
+        display: flex;
+        flex-direction: column;
+
+        .section_most_traded_cryptocurrencies_container_legend_item {
+            margin: 20px;
+            font-weight: $font_weight_normal;
+            @include text-custom($font_size_1_2,
+                $font_weight_normal,
+                $neutral_white,
+                $text_transform_capitalize,
+                $letter_spacing_medium);
+            text-align: $text_align_left;
         }
     }
 }
@@ -710,6 +725,7 @@ header {
 
     .section_promotion_nft_container_promotion_subtitle {
         margin-top: 20px;
+
         @include media-maxwidth($deskop_size) {
             margin: 20px auto;
             line-height: 1.4;
@@ -1202,10 +1218,10 @@ header {
 .footer {
     min-height: 40vh;
     padding: 0 5%;
- 
+
     hr {
         height: 1px;
-        background-image: linear-gradient(270deg, #0769f4, #ff00dd, $neutral_white, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan,$neutral_white, #ff00dd, #0769f4);
+        background-image: linear-gradient(270deg, #0769f4, #ff00dd, $neutral_white, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $neutral_white, #ff00dd, #0769f4);
         opacity: 2;
         position: relative;
         mask-image: linear-gradient(90deg, transparent, $neutral_white, $neutral_white, transparent);
@@ -1233,32 +1249,43 @@ header {
         }
     }
 
-    .footer_list{
+    .footer_list {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .footer_nav_bar_list_item{
+
+        .footer_nav_bar_list_item {
             width: 10px;
             height: 10px;
             margin: 0 25px;
-            .footer_nav_bar_list_item_link{
+
+            .footer_nav_bar_list_item_link {
                 padding: 10px;
                 border-radius: 50%;
                 border: solid 2px $primary_color_light_cyan;
                 transition: 0.5s;
-                &:hover{
+
+                &:hover {
                     border: solid 2px $neutral_white;
                     background: $primary_color_light_cyan;
                     box-shadow: 0 0 10px $primary-color-light-cyan;
                     filter: brightness(120%);
                 }
-                .fa-brands{
+
+                .fa-brands {
                     font-size: $font_size_1;
                     color: $neutral_white;
                 }
             }
-        }    
+        }
     }
+}
+
+.footer_section_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* footer_end */

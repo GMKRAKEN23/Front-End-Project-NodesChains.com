@@ -64,6 +64,16 @@ table {
   color: #00FEFB;
 }
 
+.reactive_additional_information_section {
+  position: fixed;
+  width: 20%;
+  right: 0%;
+  min-height: 1000px;
+  height: 100%;
+  background: red;
+  z-index: 100;
+}
+
 body {
   width: 100%;
   height: auto;
@@ -1261,6 +1271,13 @@ header .active:hover {
 .footer_nav_bar .footer_list .footer_nav_bar_list_item .footer_nav_bar_list_item_link .fa-brands {
   font-size: 1rem;
   color: #fbfafa;
+}
+
+.footer_section_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* footer_end *//*# sourceMappingURL=main.css.map */
