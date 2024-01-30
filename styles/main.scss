@@ -23,17 +23,67 @@
             color: $primary_color_bright_light_cyan;
         }
     }
-
 }
 
-.reactive_additional_information_section{
+.reactive_additional_information_section {
     position: fixed;
+    top: 2%;
+    min-width: calc(300px - 20px);
     width: 20%;
     right: 0%;
-    min-height: 1000px;
-    height: 100%;
-    background: red;
+    min-height: 95%;
+    border-radius: 20px;
+    background: $primary-color-light-cyan;
+    box-shadow: 0 0 10px $primary-color-light-cyan;
+    color: white;
     z-index: 100;
+    box-shadow: inset 1.21px 1.59px 2.80px -0.35px rgba(0, 0, 0, 0.15),
+        inset -1.82px -2.39px 2.80px -0.35px rgba(0, 0, 0, 0.3),
+        3.63px 4.77px 2.10px -1.05px rgba(0, 0, 0, 0.6);
+    .reactive_additional_information_section_title{
+        @include text-custom($font_size: $font_size_1_2,
+        $font_weight: $font_weight_medium,
+        $text_color: $neutral_white,
+        $text_transform: $text_transform_capitalize,
+        $letter_spacing: $letter_spacing_light);
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.reactive_additional_information_section_article {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px auto;
+    height: auto;
+    border: solid 1px $neutral_white;
+    background: black;
+    border-radius: $border_radius_20;
+
+    .reactive_additional_information_section_article_title {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .reactive_additional_information_section_article_link {
+        width: 40%;
+        padding: 8px 15px;
+        background: white;
+        border-radius: $border_radius_20;
+        margin: 10px auto;
+        text-align: center;
+        color: $strong_black;
+        border: solid 1px $strong_black;
+        transition: 0.2s;
+
+        &:hover{
+            color: $neutral_white;
+            background: $primary-color-light-cyan;        box-shadow: inset 1.21px 1.59px 2.80px -0.35px rgba(0, 0, 0, 0.15),
+        inset -1.82px -2.39px 2.80px -0.35px rgba(0, 0, 0, 0.3),
+        3.63px 4.77px 2.10px -1.05px rgba(0, 0, 0, 0.6);
+        }
+    }
 }
 
 body {
