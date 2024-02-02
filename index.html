@@ -12,15 +12,8 @@
 </head>
 
 <body>
-
-    <!-- container_chat -->
-    <div class="support_message">
-        <i class='bx bxs-message-rounded-dots' ></i>
-    </div>
-    <!-- container_chat_end-->
-
     <!-- section_reactive_additionnal_information -->
-    <section class="reactive_additional_information_section" >
+    <section class="reactive_additional_information_section">
         <h2 class="reactive_additional_information_section_title">explore the power of NFT</h2>
         <article class="reactive_additional_information_section_article">
             <h3 class="reactive_additional_information_section_article_title">NFT Promotion -20%</h3>
@@ -32,7 +25,12 @@
             <img src="asset/panda_nft.jpg" alt="image_panda_nft" width="250" height="220">
             <a href="#" class="reactive_additional_information_section_article_link">Buy now</a>
         </article>
+
     </section>
+
+    <div class="reactive_additional_information_section_btn">
+        <i class='bx bxs-radiation'></i>
+    </div>
     <!-- section_reactive_additionnal_information -->
 
 
@@ -407,61 +405,89 @@
             <div class="section_most_traded_cryptocurrencies_container_legend">
                 <h2 class="section_most_traded_cryptocurrencies_container_legend_title">Cryptocurrencies Legend</h2>
                 <ul class="section_most_traded_cryptocurrencies_container_legend_list">
-                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="30">Bitcoin: 30%</span></li>
-                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="30">Ethereum: 30%</span></li>
-                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Solana: 10%</span></li>
-                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Chainlink: 10%</span></li>
-                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Polygon: 10%</span></li>
-                  <li class="section_most_traded_cryptocurrencies_container_legend_item"><span data-crypto="10">Stacks: 10%</span></li>
+                    <li class="section_most_traded_cryptocurrencies_container_legend_item"><span
+                            data-crypto="30">Bitcoin: 30%</span></li>
+                    <li class="section_most_traded_cryptocurrencies_container_legend_item"><span
+                            data-crypto="30">Ethereum: 30%</span></li>
+                    <li class="section_most_traded_cryptocurrencies_container_legend_item"><span
+                            data-crypto="10">Solana: 10%</span></li>
+                    <li class="section_most_traded_cryptocurrencies_container_legend_item"><span
+                            data-crypto="10">Chainlink: 10%</span></li>
+                    <li class="section_most_traded_cryptocurrencies_container_legend_item"><span
+                            data-crypto="10">Polygon: 10%</span></li>
+                    <li class="section_most_traded_cryptocurrencies_container_legend_item"><span
+                            data-crypto="10">Stacks: 10%</span></li>
                 </ul>
             </div>
             <canvas id="chart_crypto" class="section_most_traded_cryptocurrencies_container_my_chart"></canvas>
         </div>
     </section>
-    
+
     <!-- section_footer -->
     <footer class="footer">
-        <hr>
 
-        <nav class="footer_nav_bar">
-            <figure class="footer_nav_bar_figure">
-                <a href="index.html" class="footer_nav_bar_figure_link">
-                    <img src="/asset/logo.png" class="footer_nav_bar_figure_link_image" alt="logo_nodeschains"
-                        width="40" height="40">
-                    <figcaption class="footer_nav_bar_figure_link_figcaption">nodeschains.com</figcaption>
+        <div class="footer_container">
+            <figure class="footer_container_figure">
+                <a href="index.html" class="footer_container_figure_link">
+                    <img src="/asset/logo.png" class="footer_container_figure_link_image" alt="logo_nodeschains"
+                        width="60" height="60">
+                    <figcaption class="footer_container_figure_link_figcaption">nodeschains.com</figcaption>
                 </a>
             </figure>
 
-            <ul class="footer_list">
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-discord"></i></a></li>
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-youtube"></i></a></li>
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-tiktok"></i></a></li>
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-meta"></i></a></li>
-                <li class="footer_nav_bar_list_item"><a href="#" class="footer_nav_bar_list_item_link"><i
-                            class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-        </nav>
-
-        <div class="footer_section_info">
-            <div class="footer_section_info_newsletter">
-                <input type="text" id="info_newsletter" placeholder="newsletter">
+            <div class="footer_container_info">
+                <div class="footer_container_info_newsletter">
+                    <input type="text" id="info_newsletter" placeholder="Subscribe to our newsletter"
+                        class="footer_container_info_newsletter_input">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
             </div>
-        </div>
 
+            <nav class="footer_container_company_nav_bar">
+                <ul class="footer_container_company_nav_bar_list">
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">News</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Jobs</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Partners</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Blog</a></li>
+                </ul>
+                <ul class="footer_container_company_nav_bar_list">
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Home</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">News</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Jobs</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Partners</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Blog</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Blog</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <ul class="footer_container_media">
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i 
+                    class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-discord"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-tiktok"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-meta"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="bx bxs-envelope"></i></a></li>
+            </ul>
+        </div>
 
     </footer>
     <!-- section_footer_end -->
 
-    <script type="text/javascript" src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
-    <script type="module" src="js/script.js" ></script>
+    <script type="text/javascript"
+        src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/displaySection.js"></script>
 </body>
 
 </html>
