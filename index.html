@@ -315,9 +315,9 @@
     </section>
     <!-- section_service_company_end -->
 
-      <!-- section_crypto_list_end -->
+    <!-- section_crypto_list_end -->
 
-      <section class="section_most_traded_cryptocurrencies">
+    <section class="section_most_traded_cryptocurrencies">
         <h2 class="section_most_traded_cryptocurrencies_title">most traded cryptocurrencies</h2>
         <div class="section_most_traded_cryptocurrencies_container">
             <div class="section_most_traded_cryptocurrencies_container_legend">
@@ -339,6 +339,43 @@
             </div>
             <canvas id="chart_crypto" class="section_most_traded_cryptocurrencies_container_my_chart"></canvas>
         </div>
+    </section>
+
+    <!-- section_presentation_team -->
+    <section class="section_presentation_team">
+
+        <!-- Slider main container -->
+        <div class="section_presentation_team_container_slide">
+            <!-- Additional required wrapper -->
+            <div class="section_presentation_team_container_slide_swiper-wrapper">
+                <!-- Slides -->
+                <article class="section_presentation_team_container_slide_card">
+                    <div class="section_presentation_team_container_slide_card_image_content">
+                            <img src="" alt="">                
+                    </div>
+                    <div class="section_presentation_team_container_slide_card_description">
+                        <h2 class="section_presentation_team_container_slide_card_description"></h2>
+                    </div>
+                    slide 1
+                </article>
+                <article class="swiper-slide">Slide 2</article>
+                <article class="swiper-slide">Slide 3</article>
+                <article class="swiper-slide">Slide 4</article>
+                <article class="swiper-slide">Slide 5</article>
+                <article class="swiper-slide">Slide 6</article>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- Slider main container_end -->
+
     </section>
 
     <!-- section_crypto_list -->
@@ -423,6 +460,7 @@
             </div>
         </div>
     </section>
+    <!-- section_crypto_list_end -->
 
     <hr class="line">
     <!-- section_footer -->
@@ -447,23 +485,32 @@
 
             <nav class="footer_container_company_nav_bar">
                 <ul class="footer_container_company_nav_bar_list">
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">News</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Jobs</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Partners</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Blog</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">News</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">Jobs</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">Partners</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">Blog</a></li>
                 </ul>
                 <ul class="footer_container_company_nav_bar_list">
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Privacy Policy</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Terms and Conditions</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">Security</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">FAQ</a></li>
-                    <li class="footer_container_company_nav_bar_list_items"><a href="#" class="footer_container_company_nav_bar_list_items_link">cookies preferences</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">Privacy Policy</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">Terms and Conditions</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">Security</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">FAQ</a></li>
+                    <li class="footer_container_company_nav_bar_list_items"><a href="#"
+                            class="footer_container_company_nav_bar_list_items_link">cookies preferences</a></li>
                 </ul>
             </nav>
 
             <ul class="footer_container_media">
-                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i 
-                    class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
                 <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
                             class="fa-brands fa-discord"></i></a></li>
                 <li class="footer_container_media"><a href="#" class="footer_container_media_link"><i
@@ -488,6 +535,32 @@
         src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
     <script type="module" src="js/script.js"></script>
     <script src="js/displaySection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.section_presentation_team_container_slide', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  
+    </script>
+
 </body>
 
 </html>

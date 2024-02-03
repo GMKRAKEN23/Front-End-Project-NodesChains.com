@@ -1277,6 +1277,25 @@ header .active:hover {
 }
 
 /* section_crypto_list_end */
+/* section_presentation_team */
+.section_presentation_team {
+  min-height: 70vh;
+  background: red;
+}
+
+.section_presentation_team_container_slide {
+  width: 800px;
+  height: 300px;
+  background: peru;
+  margin: 0 auto;
+}
+
+.section_presentation_team_container_slide_swiper-wrapper {
+  background: purple;
+  margin: 0 auto;
+}
+
+/* section_presentation_team_end */
 /* line */
 .line {
   background: linear-gradient(270deg, black, black, #00FEFB, #00FEFB, #1786F9, #00FEFB, #1786F9, #00FEFB, #00FEFB, black, black);
