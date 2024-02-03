@@ -22,7 +22,7 @@ function showChartIfVisible() {
                     data: [30, 30, 10, 10, 10, 10],
                     borderWidth: 1,
                     backgroundColor: [
-                        '#00BFFF', '#FFA07A', '#00FF00', '#9400D3', '#FFFF00', '#FF4040'
+                        '#00FEFB', '#0769f4', '#a852ff', '#ff00dd', '#fbfafa', '#0769f4'
                     ],
                     borderColor: '#fbfafa',
                 }]

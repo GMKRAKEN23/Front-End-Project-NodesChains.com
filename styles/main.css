@@ -701,7 +701,6 @@ header .active:hover {
 /* section_buy_crypto_end */
 /* section_most_traded_cryptocurrencies */
 .section_most_traded_cryptocurrencies {
-  width: 100%;
   min-height: 80vh;
   min-height: 40vh;
   padding: 0 5%;
@@ -723,6 +722,7 @@ header .active:hover {
 }
 
 .section_most_traded_cryptocurrencies_container {
+  background: #1e1c1c;
   border-radius: 25px;
   border: solid 2px #00FEFB;
   box-shadow: 0 0 10px #1786F9;
@@ -733,7 +733,6 @@ header .active:hover {
   width: 900px;
   height: 500px;
   padding: 20px;
-  background: #1786F9;
 }
 .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_title {
   margin: 20px;
@@ -1063,6 +1062,7 @@ header .active:hover {
   border: solid 1px #fbfafa;
   border-radius: 10px;
   box-shadow: 0 0 20px #fbfafa;
+  background: #1e1c1c;
   z-index: 1;
 }
 @media (min-width: 1024px) {
@@ -1277,6 +1277,16 @@ header .active:hover {
 }
 
 /* section_crypto_list_end */
+/* line */
+.line {
+  background: linear-gradient(270deg, black, black, #00FEFB, #00FEFB, #1786F9, #00FEFB, #1786F9, #00FEFB, #00FEFB, black, black);
+  height: 1px;
+  opacity: 1;
+  border-radius: 30px;
+  border: 0;
+}
+
+/* line_end */
 /* footer */
 .footer {
   display: flex;
@@ -1289,13 +1299,18 @@ header .active:hover {
 }
 
 .footer_container {
-  margin: 0 auto;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
 }
 
 .footer_container_figure {
   display: flex;
   justify-content: center;
-  width: 250px;
+  margin: 0 auto;
+  width: 300px;
 }
 .footer_container_figure .footer_container_figure_link {
   cursor: pointer;
@@ -1310,6 +1325,11 @@ header .active:hover {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: none;
+  letter-spacing: 3px;
 }
 .footer_container_figure .footer_container_figure_link_figcaption {
   padding: 10px;
@@ -1317,6 +1337,9 @@ header .active:hover {
 
 .footer_container_info {
   margin: 0 auto;
+}
+.footer_container_info .footer_container_info_newsletter {
+  text-align: center;
 }
 .footer_container_info .footer_container_info_newsletter .footer_container_info_newsletter_input {
   width: 300px;
@@ -1369,18 +1392,42 @@ header .active:hover {
 }
 .footer_container_company_nav_bar .footer_container_company_nav_bar_list {
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .footer_container_company_nav_bar .footer_container_company_nav_bar_list .footer_container_company_nav_bar_list_items {
+  display: flex;
   margin: 0 20px;
+  font-size: 1.2rem;
+}
+.footer_container_company_nav_bar .footer_container_company_nav_bar_list .footer_container_company_nav_bar_list_items .footer_container_company_nav_bar_list_items_link {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #fbfafa;
+  text-transform: none;
+  letter-spacing: 2px;
+}
+.footer_container_company_nav_bar .footer_container_company_nav_bar_list .footer_container_company_nav_bar_list_items .footer_container_company_nav_bar_list_items_link:hover {
+  color: #1786F9;
 }
 
 .footer_container_media_link {
-  padding: 10px;
-  background: #1786F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
+  margin: 0 15px;
+  background: #1786F9;
   border: solid 1px #fbfafa;
   color: #fbfafa;
+}
+.footer_container_media_link:hover {
+  background: #fbfafa;
+  color: #1e1c1c;
+}
+.footer_container_media_link i:hover {
+  color: #1e1c1c;
 }
 
 /* footer_end *//*# sourceMappingURL=main.css.map */

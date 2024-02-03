@@ -681,7 +681,6 @@ header {
 /* section_most_traded_cryptocurrencies */
 
 .section_most_traded_cryptocurrencies {
-    width: 100%;
     min-height: 80vh;
     min-height: 40vh;
     padding: 0 5%;
@@ -705,6 +704,7 @@ header {
 }
 
 .section_most_traded_cryptocurrencies_container {
+    background: $strong_black;
     border-radius: $border_radius_25;
     border: solid 2px $primary_color_bright_light_cyan;
     box-shadow: 0 0 10px $primary-color-light-cyan;
@@ -715,7 +715,7 @@ header {
     width: 900px;
     height: 500px;
     padding: 20px;
-    background: $primary-color-light-cyan;
+
 
     .section_most_traded_cryptocurrencies_container_legend_title {
         margin: 20px;
@@ -1075,6 +1075,7 @@ header {
             border: solid 1px $neutral_white;
             border-radius: $border_radius_10;
             box-shadow: 0 0 20px $neutral_white;
+            background: $strong_black;
             z-index: 1;
 
             @include media-maxwidth($deskop_size) {
@@ -1289,6 +1290,18 @@ header {
 
 /* section_crypto_list_end */
 
+/* line */
+
+.line{
+    background: linear-gradient(270deg, black, black, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan,black, black);
+    height: 1px;
+    opacity: 1;
+    border-radius: 30px;
+    border: 0;
+}
+
+/* line_end */
+
 /* footer */
 
 .footer {
@@ -1302,13 +1315,18 @@ header {
 }
 
 .footer_container{
-    margin: 0 auto;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
 }
 
 .footer_container_figure {
     display: flex;
     justify-content: center;
-    width: 250px;
+    margin: 0 auto;
+    width: 300px;
 
     .footer_container_figure_link {
         cursor: $cursor_pointer;
@@ -1317,6 +1335,11 @@ header {
             $align: $align_items_center);
         font-size: $font_size_1_2;
         @include text-gradient(linear-gradient(35deg, $primary_color_bright_light_cyan, $primary_color_light_cyan), text, transparent);
+        @include text-custom($font_size: $font_size_1_2,
+        $font_weight: $font_weight_medium,
+        $text_color: $neutral_white,
+        $text_transform: $text_transform_none,
+        $letter_spacing: $letter_spacing_strong);
     }
 
     .footer_container_figure_link_figcaption {
@@ -1324,9 +1347,9 @@ header {
     }
 }
 .footer_container_info{
-
     margin: 0 auto;
     .footer_container_info_newsletter {
+        text-align: center;
     .footer_container_info_newsletter_input {
         width: 300px;
         height: 50px;
@@ -1362,7 +1385,6 @@ header {
 }
 }
 
-
 .footer_container_media{
     display: flex;
     margin: 0 auto;
@@ -1374,23 +1396,47 @@ header {
 .footer_container_company_nav_bar{
     display: flex;
     flex-direction: column;
-
-
     .footer_container_company_nav_bar_list{
-        display: flex;    
-        margin: 0 auto;        
+        display: flex;   
+        margin: 20px auto;        
         .footer_container_company_nav_bar_list_items{
+            display: flex;
             margin: 0 20px;
+            font-size: $font_size_1_2;
+            .footer_container_company_nav_bar_list_items_link{ 
+                @include text-custom($font_size_1_1,
+                $font_weight_normal,
+                $neutral_white,
+                $text_transform_none,
+                $letter_spacing_medium);
+                &:hover{
+                    color: $primary_color_light_cyan;
+                }
+            }
         }
     }
 }
 
 .footer_container_media_link{
-    padding: 10px;
-    background: $primary_color_light_cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
+    margin: 0 15px;
+    background: $primary_color_light_cyan;
     border: solid 1px $neutral_white;
     color: $neutral_white;
+    &:hover{
+        background: $neutral_white;
+        color: $strong_black;
+    }
+    i{
+        &:hover{
+            color: $strong_black;
+        }
+    }
 }
 
 /* footer_end */
