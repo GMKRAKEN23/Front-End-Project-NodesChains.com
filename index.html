@@ -9,6 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -345,36 +347,64 @@
     <section class="section_presentation_team">
 
         <!-- Slider main container -->
-        <div class="section_presentation_team_container_slide">
+        <div class="swiper">
             <!-- Additional required wrapper -->
-            <div class="section_presentation_team_container_slide_swiper-wrapper">
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                <article class="section_presentation_team_container_slide_card">
-                    <div class="section_presentation_team_container_slide_card_image_content">
-                            <img src="" alt="">                
+                <div class="card swiper-slide">
+                    <div class="card_container">
+                        <div class="container_image">
+                            <img src="asset/pro.png" alt="" width="130">
+                        </div>
+                        <div class="container_description">
+                            <h2>ryan smith</h2>
+                            <h3>blockchain developer</h3>
+                            <p>Blockchain developer with in-depth expertise in designing and implementing decentralized solutions.</p>
+                        </div>
+                        <div class="container_btn">
+                            <a href="#">view more</a>
+                        </div>
+                        
                     </div>
-                    <div class="section_presentation_team_container_slide_card_description">
-                        <h2 class="section_presentation_team_container_slide_card_description"></h2>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card_container">
+                        <div class="container_image">
+                            <img src="asset/pro.png" alt="" width="130">
+                        </div>
+                        <div class="container_description">
+                            <h2>Jhon Douglas</h2>
+                            <h3>CEO</h3>
+                            <p>Ambitious entrepreneur passionate about innovation and driving business growth.</p>
+                        </div>
+                        <div class="container_btn">
+                            <a href="#">view more</a>
+                        </div>   
                     </div>
-                    slide 1
-                </article>
-                <article class="swiper-slide">Slide 2</article>
-                <article class="swiper-slide">Slide 3</article>
-                <article class="swiper-slide">Slide 4</article>
-                <article class="swiper-slide">Slide 5</article>
-                <article class="swiper-slide">Slide 6</article>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card_container">
+                        <div class="container_image">
+                            <img src="asset/pro.png" alt="" width="130">
+                        </div>
+                        <div class="container_description">
+                            <h2>jenny lee</h2>
+                            <h3>marketing expert</h3>
+                            <p>Dynamic and creative marketing expert. Specializing in crafting innovative marketing strategies.</p>
+                        </div>
+                        <div class="container_btn">
+                            <a href="#">view more</a>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
-        <!-- Slider main container_end -->
+
 
     </section>
 
@@ -530,37 +560,12 @@
 
     </footer>
     <!-- section_footer_end -->
-
     <script type="text/javascript"
         src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
     <script type="module" src="js/script.js"></script>
     <script src="js/displaySection.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.section_presentation_team_container_slide', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-  
-    </script>
-
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 
 </html>
