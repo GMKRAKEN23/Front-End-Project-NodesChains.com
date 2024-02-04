@@ -13,6 +13,7 @@
     bottom: 6%;
     left: 3%;
     z-index: 250;
+    width: 40px;
     cursor: pointer;
 
     .bxs-radiation {
@@ -687,7 +688,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_2.jpg");
+    background-image: url("/asset/connection_3.jpg");
 
     .section_most_traded_cryptocurrencies_title {
         @include text-custom($font_size_2,
@@ -782,6 +783,7 @@ header {
     justify-content: space-around;
 
     .section_promotion_nft_container_promotion_title {
+        line-height: 1.4;
         @include media-maxwidth($deskop_size) {
             margin: 20px auto;
         }
@@ -1292,11 +1294,26 @@ header {
 
 /* section_presentation_team */
 
-.section_presentation_team{
+.section_presentation_team {
     min-height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include background-properties($background_size_cover,
+        $background_position_center,
+        $background_repeat);
+    background-image: url("/asset/connection_4.jpg");
+    min-height: 100vh;
+}
+
+.section_presentation_team_title{
+    @include text-custom($font_size_2,
+    $font_weight_medium,
+    $neutral_white,
+    $text_transform_capitalize,
+    $letter_spacing_strong);
+    margin: 20px 0;
 }
 
 .swiper {
@@ -1304,14 +1321,15 @@ header {
     height: 400px;
 }
 
-.card{
-    .card_container{
+.card {
+    .card_container {
         margin: 5px;
         outline: solid 3px $neutral_white;
         border-radius: 20px;
         height: 380px;
-        background: $primary_color_bright_light_cyan;
-        .container_image{
+        background: $strong_black;
+
+        .container_image {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1320,68 +1338,77 @@ header {
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-        .container_description{
+
+        .container_description {
             padding: 10px 20px;
             height: 150px;
         }
-        h2{
+
+        h2 {
             @include text-custom($font_size_1,
-            $font_weight_medium,
-            $strong_black,
-            $text_transform_capitalize,
-            $letter_spacing_strong);
+                $font_weight_medium,
+                $neutral_white,
+                $text_transform_capitalize,
+                $letter_spacing_strong);
             text-align: center;
             padding: 10px 0;
         }
-        h3{
+
+        h3 {
             @include text-custom($font_size_1,
-            $font_weight_medium,
-            $primary-color-light-cyan,
-            $text_transform_capitalize,
-            $letter_spacing_medium);
+                $font_weight_medium,
+                $primary-color-light-cyan,
+                $text_transform_capitalize,
+                $letter_spacing_medium);
             text-align: center;
         }
-        p{
+
+        p {
 
             text-align: center;
             letter-spacing: 1px;
             line-height: 1.2;
             padding: 10px 0;
+            color: $neutral_white;
         }
-        .container_btn{
+
+        .container_btn {
             width: 200px;
             text-align: center;
             margin: 0 auto;
         }
-        a{
+
+        a {
             padding: 7px 14px;
             background: $primary-color-light-cyan;
             border-radius: 10px;
             color: white;
             transition: 0.3s;
-            &:hover{
+
+            &:hover {
                 color: $strong_black;
             }
         }
     }
 }
 
-.swiper-slide{
+.swiper-slide {
     width: 320px;
     height: 500px;
     margin: 10px 0px;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after{
-   color: $strong_black;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: $neutral_white;
 }
-  
+
 /* section_presentation_team_end */
 
 /* line */
 
-.line{
-    background: linear-gradient(270deg, black, black, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan,black, black);
+.line {
+    background: linear-gradient(270deg, black, black, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan, black, black);
     height: 1px;
     opacity: 1;
     border-radius: 30px;
@@ -1402,7 +1429,7 @@ header {
     margin: 0 auto;
 }
 
-.footer_container{
+.footer_container {
     margin: 25px auto;
     display: flex;
     flex-direction: column;
@@ -1424,80 +1451,88 @@ header {
         font-size: $font_size_1_2;
         @include text-gradient(linear-gradient(35deg, $primary_color_bright_light_cyan, $primary_color_light_cyan), text, transparent);
         @include text-custom($font_size: $font_size_1_2,
-        $font_weight: $font_weight_medium,
-        $text_color: $neutral_white,
-        $text_transform: $text_transform_none,
-        $letter_spacing: $letter_spacing_strong);
+            $font_weight: $font_weight_medium,
+            $text_color: $neutral_white,
+            $text_transform: $text_transform_none,
+            $letter_spacing: $letter_spacing_strong);
     }
 
     .footer_container_figure_link_figcaption {
         padding: 10px;
     }
 }
-.footer_container_info{
+
+.footer_container_info {
     margin: 0 auto;
+
     .footer_container_info_newsletter {
         text-align: center;
-    .footer_container_info_newsletter_input {
-        width: 300px;
-        height: 50px;
-        padding: 0 10px;
-        border: none;
-        border-left: solid 1px rgba(128, 128, 128, 0.8);
-        border-bottom: solid 1px rgba(128, 128, 128, 0.8);
-        outline: none;
-        background: transparent;
-        color: $primary_color_bright_light_cyan;
-        transition: 0.5s;
 
-        &:hover {
-            border-left: solid 1px $primary_color_bright_light_cyan;
-            border-bottom: solid 1px $primary_color_bright_light_cyan;
+        .footer_container_info_newsletter_input {
+            width: 300px;
+            height: 50px;
+            padding: 0 10px;
+            border: none;
+            border-left: solid 1px rgba(128, 128, 128, 0.8);
+            border-bottom: solid 1px rgba(128, 128, 128, 0.8);
+            outline: none;
+            background: transparent;
+            color: $primary_color_bright_light_cyan;
+            transition: 0.5s;
+
+            &:hover {
+                border-left: solid 1px $primary_color_bright_light_cyan;
+                border-bottom: solid 1px $primary_color_bright_light_cyan;
+            }
+
+            &::placeholder {
+                @include text-custom(12px,
+                    $font_weight_medium,
+                    $neutral_white,
+                    $text_transform_capitalize,
+                    $letter_spacing_medium);
+            }
         }
 
-        &::placeholder {
-            @include text-custom(12px,
-                $font_weight_medium,
-                $neutral_white,
-                $text_transform_capitalize,
-                $letter_spacing_medium);
+        .bx-right-arrow-alt {
+            color: gray;
+            font-size: $font_size_1_2;
+            position: relative;
+            right: 30px;
         }
     }
-
-    .bx-right-arrow-alt {
-        color: gray;
-        font-size: $font_size_1_2;
-        position: relative;
-        right: 30px;
-    }
-}
 }
 
-.footer_container_media{
+.footer_container_media {
     display: flex;
     margin: 0 auto;
-    .footer_container_media{
+
+    .footer_container_media {
         margin: 0 auto;
     }
 }
 
-.footer_container_company_nav_bar{
+.footer_container_company_nav_bar {
     display: flex;
     flex-direction: column;
-    .footer_container_company_nav_bar_list{
-        display: flex;   
-        margin: 20px auto;        
-        .footer_container_company_nav_bar_list_items{
+
+    .footer_container_company_nav_bar_list {
+        display: flex;
+        margin: 20px auto;
+
+        .footer_container_company_nav_bar_list_items {
             display: flex;
             margin: 0 20px;
             font-size: $font_size_1_2;
-            .footer_container_company_nav_bar_list_items_link{ 
+
+            .footer_container_company_nav_bar_list_items_link {
                 @include text-custom($font_size_1_1,
-                $font_weight_normal,
-                $neutral_white,
-                $text_transform_none,
-                $letter_spacing_medium);
-                &:hover{
+                    $font_weight_normal,
+                    $neutral_white,
+                    $text_transform_none,
+                    $letter_spacing_medium);
+
+                &:hover {
                     color: $primary_color_light_cyan;
                 }
             }
@@ -1505,7 +1540,7 @@ header {
     }
 }
 
-.footer_container_media_link{
+.footer_container_media_link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1516,12 +1551,15 @@ header {
     background: $primary_color_light_cyan;
     border: solid 1px $neutral_white;
     color: $neutral_white;
-    &:hover{
+    transition: 0.3s;
+
+    &:hover {
         background: $neutral_white;
         color: $strong_black;
     }
-    i{
-        &:hover{
+
+    i {
+        &:hover {
             color: $strong_black;
         }
     }

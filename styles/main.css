@@ -54,6 +54,7 @@ table {
   bottom: 6%;
   left: 3%;
   z-index: 250;
+  width: 40px;
   cursor: pointer;
 }
 .reactive_additional_information_section_btn .bxs-radiation {
@@ -707,7 +708,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_2.jpg");
+  background-image: url("/asset/connection_3.jpg");
   display: flex;
   flex-direction: column;
 }
@@ -795,6 +796,7 @@ header .active:hover {
   }
 }
 .section_promotion_nft_container_promotion .section_promotion_nft_container_promotion_title {
+  line-height: 1.4;
   font-size: 2rem;
   font-weight: normal;
   color: #fbfafa;
@@ -1281,8 +1283,23 @@ header .active:hover {
 .section_presentation_team {
   min-height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("/asset/connection_4.jpg");
+  min-height: 100vh;
+}
+
+.section_presentation_team_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  margin: 20px 0;
 }
 
 .swiper {
@@ -1295,7 +1312,7 @@ header .active:hover {
   outline: solid 3px #fbfafa;
   border-radius: 20px;
   height: 380px;
-  background: #00FEFB;
+  background: #1e1c1c;
 }
 .card .card_container .container_image {
   display: flex;
@@ -1313,7 +1330,7 @@ header .active:hover {
 .card .card_container h2 {
   font-size: 1rem;
   font-weight: 700;
-  color: #1e1c1c;
+  color: #fbfafa;
   text-transform: capitalize;
   letter-spacing: 3px;
   text-align: center;
@@ -1332,6 +1349,7 @@ header .active:hover {
   letter-spacing: 1px;
   line-height: 1.2;
   padding: 10px 0;
+  color: #fbfafa;
 }
 .card .card_container .container_btn {
   width: 200px;
@@ -1355,8 +1373,9 @@ header .active:hover {
   margin: 10px 0px;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
-  color: #1e1c1c;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fbfafa;
 }
 
 /* section_presentation_team_end */
@@ -1504,6 +1523,7 @@ header .active:hover {
   background: #1786F9;
   border: solid 1px #fbfafa;
   color: #fbfafa;
+  transition: 0.3s;
 }
 .footer_container_media_link:hover {
   background: #fbfafa;
