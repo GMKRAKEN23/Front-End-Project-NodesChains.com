@@ -1436,6 +1436,9 @@ header .active:hover {
 .footer_container_figure .footer_container_figure_link_figcaption {
   padding: 10px;
 }
+.footer_container_figure .footer_container_figure_link_image {
+  animation: rotate 3s linear infinite;
+}
 
 .footer_container_info {
   margin: 0 auto;

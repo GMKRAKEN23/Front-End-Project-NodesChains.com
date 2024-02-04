@@ -784,6 +784,7 @@ header {
 
     .section_promotion_nft_container_promotion_title {
         line-height: 1.4;
+
         @include media-maxwidth($deskop_size) {
             margin: 20px auto;
         }
@@ -1307,12 +1308,12 @@ header {
     min-height: 100vh;
 }
 
-.section_presentation_team_title{
+.section_presentation_team_title {
     @include text-custom($font_size_2,
-    $font_weight_medium,
-    $neutral_white,
-    $text_transform_capitalize,
-    $letter_spacing_strong);
+        $font_weight_medium,
+        $neutral_white,
+        $text_transform_capitalize,
+        $letter_spacing_strong);
     margin: 20px 0;
 }
 
@@ -1459,6 +1460,11 @@ header {
 
     .footer_container_figure_link_figcaption {
         padding: 10px;
+
+    }
+
+    .footer_container_figure_link_image {
+        animation: rotate 3s linear infinite;
     }
 }
 
