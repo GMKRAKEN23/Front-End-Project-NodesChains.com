@@ -9,6 +9,18 @@ $font_size_3: 3rem;
 $font_size_3_5: 3.5rem;
 $font_size_4_xl: 4rem;
 
+// spacing 
+$spacing_0: 0px;
+$spacing_5: 5px;
+$spacing_10: 10px;
+$spacing_15: 15px;
+$spacing_20: 20px;
+$spacing_25: 25px;
+$spacing_30: 30px;
+$spacing_35: 35px;
+$spacing_40: 40px;
+$auto: auto;
+
 // Text Transform 
 $text_transform_uppercase: uppercase;
 $text_transform_lowercase: lowercase;
@@ -30,6 +42,9 @@ $background_no_repeat: no-repeat;
 // Colors 
 $primary_color_light_cyan: #1786F9;
 $primary_color_bright_light_cyan : #00FEFB;
+$primary_color_pink: #ff00dd;
+$primary_color_bright_violet : #a852ff;
+$primary_color_bright_blue: #0769f4;
 $strong_black: #1e1c1c;
 $neutral_white: #fbfafa;
 
@@ -48,6 +63,7 @@ $letter_spacing_strong: 3px;
 $cursor_pointer: pointer;
 
 // Border
+$border_none: none;
 $border_solid: solid;
 $border_width_1: 1px;
 $border-width_2: 2px;
@@ -57,8 +73,24 @@ $border_radius_10: 10px;
 $border_radius_15: 15px;
 $border_radius_20: 20px;
 $border_radius_25: 25px;
+$border_radius_30: 30px;
 $border_radius_40: 40px;
+$border_radius_half: 50%;
 $border_radius_none: 0;
+
+// Position 
+
+$position_fixed: fixed;
+$position_relative: relative;
+$position_absolute: absolute;
+
+// display
+
+$display_inline_block : inline-block;
+$display_inline_flex: inline-flex;
+$display_flex: flex;
+$display_none: none;
+$display_block: block;
 
 // Flex
 $flex_direction_row: row;
@@ -71,6 +103,12 @@ $justify_content_space_between: space-between;
 $justify_content_space_evenly: space-evenly;
 $justify_content_flex-end: flex-end;
 $align_items_center: center;
+
+// Visibility 
+
+$visibility_hidden: hidden;
+$overflow_hidden : hidden;
+$transparent : transparent;
 
 // Media Queries Size
 $deskop_size: 1024px;

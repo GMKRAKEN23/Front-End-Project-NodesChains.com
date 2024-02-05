@@ -8,17 +8,17 @@
 @import 'mixins';
 
 .reactive_additional_information_section_btn {
-    position: fixed;
+    cursor: $cursor_pointer;
+    position: $position_fixed;
     right: 500px;
     bottom: 6%;
     left: 3%;
     z-index: 250;
-    width: 40px;
-    cursor: pointer;
+    width: $spacing_40;
 
     .bxs-radiation {
-        padding: 5px;
-        border-radius: 50%;
+        padding: $spacing_10;
+        border-radius: $border_radius_half;
         background: $neutral_white;
         color: $primary-color-light-cyan;
         font-size: 25px;
@@ -34,16 +34,16 @@
 }
 
 .reactive_additional_information_section {
-    position: fixed;
+    position: $position_fixed;
     top: 2%;
     min-width: calc(300px);
     width: 20%;
     right: -350px;
     min-height: 95%;
-    border-radius: 20px;
+    border-radius: $border_radius_20;
     background: $primary-color-light-cyan;
     box-shadow: 0 0 10px $primary-color-light-cyan;
-    color: white;
+    color: $neutral_white;
     z-index: 50;
     transition: 1s;
     box-shadow: inset 1.21px 1.59px 2.80px -0.35px rgba(0, 0, 0, 0.15),
@@ -51,7 +51,7 @@
         3.63px 4.77px 2.10px -1.05px rgba(0, 0, 0, 0.6);
 
     &.active_section_reactive {
-        right: 0px;
+        right: $spacing_0;
     }
 
     .reactive_additional_information_section_title {
@@ -60,35 +60,39 @@
             $text_color: $neutral_white,
             $text_transform: $text_transform_capitalize,
             $letter_spacing: $letter_spacing_light);
-        text-align: center;
-        margin: 10px 0;
+        text-align: $text_align_center;
+        margin: $spacing_10 $spacing_0;
     }
 }
 
 .reactive_additional_information_section_article {
-    display: flex;
-    flex-direction: column;
+    display: $display_flex;
+    flex-direction: $flex_direction_column;
     width: 250px;
-    margin: 10px auto;
-    height: auto;
-    border: solid 1px $neutral_white;
-    background: black;
-    border-radius: $border_radius_20;
+    margin: $spacing_10 $auto;
+    height: $auto;
+    @include border-properties($border_style: $border_solid,
+        $border_width: $border_width_1,
+        $border_color: $neutral_white,
+        $radius: $border_radius_20);
+    background: $strong_black;
 
     .reactive_additional_information_section_article_title {
-        text-align: center;
-        margin: 10px 0;
+        text-align: $text_align_center;
+        margin: $spacing_10 $spacing_0;
     }
 
     .reactive_additional_information_section_article_link {
+        @include border-properties($border_style: $border_solid,
+            $border_width: $border_width_1,
+            $border_color: $strong_black,
+            $radius: $border_radius_20);
         width: 40%;
         padding: 8px 15px;
-        background: white;
-        border-radius: $border_radius_20;
-        margin: 10px auto;
-        text-align: center;
+        background: $neutral_white;
+        margin: $spacing_10 $auto;
+        text-align: $text_align_center;
         color: $strong_black;
-        border: solid 1px $strong_black;
         transition: 0.2s;
 
         &:hover {
@@ -106,14 +110,14 @@ body {
     background: #04060a;
     font-size: 16px;
     font-family: Helvetica;
-    overflow-x: hidden;
+    overflow-x: $overflow_hidden;
 }
 
 /* header */
 
 header {
     @include media-minwidth($smartphone_size) {
-        margin: 0 20px;
+        margin: $spacing_0 $spacing_20;
     }
 
     @include media-maxwidth($smartphone_size) {
@@ -123,7 +127,7 @@ header {
     @include flex-container($direction: $flex_direction_row,
         $justify: $justify_content_space_around,
         $align: $align_items_center);
-    padding-top: 35px;
+    padding-top: $spacing_35;
 
     .header_logo {
         cursor: $cursor_pointer;
@@ -138,7 +142,7 @@ header {
 
     .header_logo_title {
         @include media-maxwidth($tablet_size) {
-            visibility: hidden;
+            visibility: $visibility_hidden;
         }
 
         @include text-custom($font_size: $font_size_1_2,
@@ -147,12 +151,12 @@ header {
             $text_transform: $text_transform_none,
             $letter_spacing: $letter_spacing_strong);
         @include text-gradient(linear-gradient(35deg, $primary_color_bright_light_cyan, $primary_color_light_cyan), text, transparent);
-        margin-left: 10px;
+        margin-left: $spacing_10;
     }
 
     .header_nav_bar_link {
         @include media-maxwidth($deskop_size) {
-            display: none;
+            display: $display_none;
         }
 
         @include text-custom($font_size-1,
@@ -170,7 +174,7 @@ header {
 
     .header_box_button_link {
         @include media-maxwidth($deskop_size) {
-            display: none;
+            display: $display_none;
         }
 
         @include text-custom($font_size: $font_size_1,
@@ -178,8 +182,8 @@ header {
             $text_color: $neutral_white,
             $text_transform: $text_transform_capitalize,
             $letter_spacing: $letter_spacing_light);
-        padding: 8px 15px;
-        margin: 5px;
+        padding: 8px $spacing_15;
+        margin: $spacing_5;
         @include border-properties($border_solid,
             $border_width_1,
             $primary-color-light-cyan,
@@ -207,7 +211,7 @@ header {
     &::after {
         @include dimensions($width: 100%, $height: 2px);
         content: "";
-        position: absolute;
+        position: $position_absolute;
         left: 0;
         bottom: -9px;
         background: $primary_color_light_cyan;
@@ -249,20 +253,20 @@ header {
 
 .header_burger_menu {
     @include media-maxwidth($deskop_size) {
-        display: block;
+        display: $display_block;
     }
 
     @include dimensions($width: auto, $height: auto);
     cursor: $cursor_pointer;
-    display: none;
+    display: $display_none;
 
     .bar {
         @include dimensions($width: 35px, $height: 2px);
         background: $neutral_white;
-        margin: 10px;
+        margin: $spacing_10;
 
         &:nth-child(2) {
-            width: 15px;
+            width: $spacing_15;
             transition: width 0.5s ease-in-out;
         }
     }
@@ -275,7 +279,7 @@ header {
         }
 
         .bar:nth-child(2) {
-            width: 35px;
+            width: $spacing_35;
         }
     }
 }
@@ -285,7 +289,7 @@ header {
 /* nav_bar_dropdown */
 .header_nav_bar_drodpdown {
     cursor: $cursor_pointer;
-    display: inline-block;
+    display: $display_inline_block;
 }
 
 .header_nav_bar_drodpdown_container {
@@ -298,11 +302,11 @@ header {
         $neutral_white,
         $border_radius_10);
     background: $primary-color-light-cyan;
-    display: none;
-    padding: 10px;
+    display: $display_none;
+    padding: $spacing_10;
+    margin-top: $spacing_20;
     max-width: 400px;
-    position: absolute;
-    margin-top: 20px;
+    position: $position_absolute;
     left: 52%;
     z-index: 10;
 
@@ -317,9 +321,9 @@ header {
         color: $strong_black;
         font-size: $font_size_1_1;
         text-transform: $text-transform_capitalize;
-        padding: 10px;
+        padding: $spacing_10;
+        width: $spacing_40;
         transition: 0.3s;
-        width: 40px;
 
         &:hover {
             color: $neutral_white;
@@ -329,8 +333,8 @@ header {
 
 #header_nav_bar_dropdown_scrolling_menu {
     @include dimensions($width: 100%, $height: 100%);
-    display: none;
-    position: fixed;
+    display: $display_none;
+    position: $position_fixed;
     top: 0;
     left: 0;
     background: $strong_black;
@@ -344,10 +348,10 @@ header {
             $letter_spacing_medium);
         @include flex-container($flex_direction_row, $justify_content_space_between);
         width: 100%;
-        padding: 20px;
-        position: relative;
         left: 5%;
-        border-top: solid 2px $neutral_white;
+        padding: $spacing_20;
+        position: $position_relative;
+        border-top: $border_solid $border-width_2 $neutral_white;
 
         &:hover {
             background: $primary_color_light_cyan;
@@ -360,20 +364,20 @@ header {
     @include flex-container($flex-direction_row,
         $justify_content_space_between,
         $align_items_center);
-    margin: 0 5%;
-    padding: 10px;
+    margin: $spacing_0 5%;
+    padding: $spacing_10;
 }
 
 .header_nav_bar_dropdown_burger_menu_header_cross {
     @include dimensions($width: 32px, $height: 32px);
-    position: relative;
+    position: $position_relative;
     cursor: $cursor_pointer;
 
     &:before,
     &:after {
         @include dimensions($width: 2px, $height: 33px);
         background: $neutral_white;
-        position: absolute;
+        position: $position_absolute;
         content: ' ';
     }
 
@@ -392,11 +396,11 @@ header {
 
 .section_presentation {
     @include media-minwidth($smartphone_size) {
-        margin-top: 30px;
+        margin-top: $spacing_30;
     }
 
     @include media-maxwidth($tablet_size) {
-        margin-top: 15px;
+        margin-top: $spacing_15;
     }
 
     @include flex-container($flex_direction_column,
@@ -408,15 +412,19 @@ header {
         $background_no_repeat);
     background-image: url("/asset/connection.jpg");
     min-height: 100vh;
+
+    @include media-maxwidth($deskop_size) {
+        min-height: 0;
+    }
 }
 
 .section_presentation_introduction {
     @include media-maxwidth($smartphone_size) {
-        margin: 20px 0;
+        margin: $spacing_20 $spacing_0;
     }
 
     width: 100%;
-    margin: 0 10px;
+    margin: $spacing_0 $spacing_10;
 
 
     .section_presentation_introduction_title {
@@ -439,7 +447,7 @@ header {
             $text_transform_capitalize,
             $letter_spacing_strong);
         width: 70%;
-        margin: 35px auto;
+        margin: $spacing_35 $auto;
         text-align: $text_align_center;
         opacity: 0.7;
         line-height: 1.5;
@@ -452,7 +460,7 @@ header {
 
 .section_presentation_list_advantage {
     @include media-minwidth($smartphone_size) {
-        margin-right: 20px;
+        margin-right: $spacing_20;
     }
 
     ;
@@ -461,13 +469,13 @@ header {
         $neutral_white,
         $border_radius_5);
     background: $primary-color-light-cyan;
-    padding: 10px;
+    padding: $spacing_10;
     width: 40%;
     min-width: 330px;
     box-shadow: 0 0 10px $primary-color-light-cyan;
 
     .section_presentation_list_advantage_menu_item {
-        padding: 10px;
+        padding: $spacing_10;
 
         i {
             padding-right: 4px;
@@ -477,7 +485,7 @@ header {
 }
 
 .section_presentation_link {
-    margin-top: 40px;
+    margin-top: $spacing_40;
 }
 
 .section_presentation_link_download_app {
@@ -492,7 +500,7 @@ header {
         $border_width_1,
         $primary-color-light-cyan,
         $border_radius_25);
-    padding: 15px 25px;
+    padding: $spacing_15 $spacing_20;
     transition: 0.3s;
 
     &:hover {
@@ -514,7 +522,7 @@ header {
 
     @include media-maxwidth($deskop_size) {
         margin-top: 70px;
-        margin-bottom: 20px;
+        margin-bottom: $spacing_20;
     }
 }
 
@@ -525,7 +533,7 @@ header {
         $flex_wrap);
 
     @include media-maxwidth($deskop_size) {
-        min-height: 60vh;
+        min-height: 0;
     }
 
     min-height: 80vh;
@@ -541,20 +549,18 @@ header {
     text-align: $text_align_center;
 
     @include media-maxwidth($deskop_size) {
-        padding: 20px;
+        padding: $spacing_20;
     }
 }
 
 .section_buy_crypto_container_advantage {
     @include flex-container($flex_direction_column);
+    width: 40%;
 
     @include media-maxwidth($deskop_size) {
         width: 80%;
-        text-align: center;
+        text-align: $text_align_center;
     }
-
-    width: 40%;
-
 
     .section_buy_crypto_container_advantage_text {
         @include text-custom($font_size_1_2,
@@ -563,7 +569,7 @@ header {
             $text_transform_none,
             $letter_spacing_medium);
         line-height: 1.5;
-        margin: 10px;
+        margin: $spacing_10;
     }
 
     .section_buy_crypto_container_advantage_link {
@@ -575,8 +581,8 @@ header {
         text-align: $text_align_center;
         color: $neutral_white;
         transition: 0.5s;
-        margin-top: 20px;
-        padding: 15px 20px;
+        margin-top: $spacing_20;
+        padding: $spacing_15 $spacing_20;
 
         &:hover {
             background: $primary_color_light_cyan;
@@ -599,7 +605,7 @@ header {
     background: $strong_black;
 
     @include media-maxwidth($deskop_size) {
-        display: none;
+        display: $display_none;
     }
 
     min-width: 370px;
@@ -628,7 +634,7 @@ header {
 .article_header_card_bank {
     @include flex-container($flex-direction_row, $justify_content_space_between);
     width: 90%;
-    padding: 10px;
+    padding: $spacing_10;
 
     .article_header_card_bank_number {
         @include text-custom($font_size_1_1,
@@ -636,7 +642,7 @@ header {
             $neutral_white,
             $text_transform_none,
             $letter_spacing_strong);
-        margin: 0 15px;
+        margin: $spacing_0 $spacing_15;
     }
 
     .article_header_card_bank_code {
@@ -645,7 +651,7 @@ header {
             $neutral_white,
             $text_transform_none,
             $letter_spacing_strong);
-        margin: 0 15px;
+        margin: $spacing_0 $spacing_15;
     }
 }
 
@@ -665,12 +671,12 @@ header {
     letter-spacing: $letter_spacing_strong;
 
     .article_footer_card_bank_name {
-        margin: 15px;
+        margin: $spacing_15;
         font-size: $font_size_1_1;
     }
 
     .article_footer_card_bank_title {
-        margin: 15px;
+        margin: $spacing_15;
         font-size: $font_size_1_5;
     }
 }
@@ -684,11 +690,15 @@ header {
 .section_most_traded_cryptocurrencies {
     min-height: 80vh;
     min-height: 40vh;
-    padding: 0 5%;
+    padding: $spacing_0 5%;
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_3.jpg");
+
+    @include media-maxwidth($smartphone_size_530) {
+        display: none;
+    }
 
     .section_most_traded_cryptocurrencies_title {
         @include text-custom($font_size_2,
@@ -697,29 +707,33 @@ header {
             $text_transform_capitalize,
             $letter_spacing_strong);
         text-align: $text_align_center;
-        margin: 20px 0;
+        margin: $spacing_20 $spacing_0;
     }
 
-    display: flex;
-    flex-direction: column;
+    display: $display_flex;
+    flex-direction: $flex_direction_column;
 }
 
 .section_most_traded_cryptocurrencies_container {
     background: $strong_black;
     border-radius: $border_radius_25;
-    border: solid 2px $primary_color_bright_light_cyan;
+    border: $border_solid $border-width_2 $primary_color_bright_light_cyan;
     box-shadow: 0 0 10px $primary-color-light-cyan;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px auto;
+    @include flex-container($flex_direction_row,
+        $justify_content_space_around,
+        $align_items_center);
+    margin: $spacing_20 $auto;
     width: 900px;
     height: 500px;
-    padding: 20px;
+    padding: $spacing_20;
 
+    @include media-maxwidth($deskop_size) {
+        width: 80%;
+        height: auto;
+    }
 
     .section_most_traded_cryptocurrencies_container_legend_title {
-        margin: 20px;
+        margin: $spacing_20;
         font-weight: $font_weight_normal;
         @include text-custom($font_size_1_2,
             $font_weight_strong,
@@ -727,14 +741,24 @@ header {
             $text_transform_capitalize,
             $letter_spacing_medium);
         text-align: $text_align_left;
+
+        @include media-maxwidth($deskop_size) {
+            text-align: $text_align_center;
+        }
+
     }
 
     .section_most_traded_cryptocurrencies_container_legend_list {
-        display: flex;
-        flex-direction: column;
+        display: $display_flex;
+        flex-direction: $flex_direction_column;
+
+        @include media-maxwidth($deskop_size) {
+            flex-direction: $flex-direction_row;
+            flex-wrap: wrap;
+        }
 
         .section_most_traded_cryptocurrencies_container_legend_item {
-            margin: 20px;
+            margin: $spacing_20;
             font-weight: $font_weight_normal;
             @include text-custom($font_size_1_2,
                 $font_weight_normal,
@@ -742,6 +766,11 @@ header {
                 $text_transform_capitalize,
                 $letter_spacing_medium);
             text-align: $text_align_left;
+
+            @include media-maxwidth($deskop_size) {
+                text-align: $text_align_center;
+                line-height: 1.4;
+            }
         }
     }
 }
@@ -758,16 +787,15 @@ header {
     background-image: url("/asset/connection_3.jpg");
 
     .section_promotion_nft_container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0 5%;
+        @include flex-container($flex_direction_row,
+            $justify_content_space_between,
+            $align_items_center, $flex_wrap);
+        padding: $spacing_0 5%;
 
         @include media-maxwidth($deskop_size) {
             width: 80%;
-            margin: 0 auto;
-            justify-content: center;
+            margin: $spacing_0 $auto;
+            justify-content: $justify_content_center;
         }
     }
 }
@@ -923,6 +951,11 @@ header {
         width: 90%;
         height: 350px;
         margin: 25px auto;
+
+    }
+
+    @include media-maxwidth($smartphone_size) {
+        height: 90%;
     }
 
     .section_promotion_nft_container_card_nft_image {
@@ -933,7 +966,10 @@ header {
         @include media-maxwidth($deskop_size) {
             width: 100%;
             height: 100%;
+        }
 
+        @include media-maxwidth($smartphone_size) {
+            height: 90%;
         }
     }
 }
@@ -971,6 +1007,10 @@ header {
     justify-content: center;
     flex-direction: column;
 
+    @include media-maxwidth($deskop_size) {
+        min-height: 0;
+    }
+
     .section_service_company_container {
         margin: 0 5%;
         width: 90%;
@@ -988,7 +1028,7 @@ header {
                     $letter_spacing_medium);
 
                 @include media-maxwidth($deskop_size) {
-                    text-align: center;
+                    text-align: $text_align_center;
                 }
 
                 &:first-letter {
@@ -997,25 +1037,26 @@ header {
             }
 
             .section_service_company_container_header_menu {
-                position: relative;
+                position: $position_relative;
                 list-style: none;
-                display: flex;
-                margin: 30px 0;
+                display: $display_flex;
+                margin: $spacing_30 $spacing_0;
 
                 @include media-maxwidth($tablet_size) {
-                    flex-wrap: wrap;
+                    flex-wrap: $flex_wrap;
                 }
             }
 
             .section_service_company_container_header_menu_item {
                 @include media-maxwidth($tablet_size) {
-                    margin: 10px auto;
+                    margin: $spacing_10 $auto;
                 }
             }
 
             .section_service_company_container_header_menu_link {
-                display: block;
-                margin: 0 5px;
+                position: $position_relative;
+                display: $display_block;
+                margin: $spacing_0 $spacing_5;
                 width: 100px;
                 height: 30px;
                 line-height: 30px;
@@ -1024,19 +1065,17 @@ header {
                     $neutral_white,
                     $text_transform_none,
                     $letter_spacing_strong);
-                border: 2px solid $primary-color-light-cyan;
-                border-radius: $border_radius_10;
+                @include border-properties($border_style: $border_solid, $border_width: $border_width_2, $border_color: $primary_color_light_cyan, $radius: $border_radius_10);
                 text-align: $text_align_center;
-                position: relative;
                 transition: all .5s;
 
                 span {
-                    position: relative;
+                    position: $position_relative;
                     z-index: 2;
                 }
 
                 &::after {
-                    position: absolute;
+                    position: $position_absolute;
                     content: "";
                     top: 0;
                     left: 0;
@@ -1082,30 +1121,33 @@ header {
             z-index: 1;
 
             @include media-maxwidth($deskop_size) {
-                flex-direction: column;
+                flex-direction: $flex_direction_column;
                 width: 90%;
                 height: auto;
 
             }
 
             .section_service_swicth_container_article_image {
-                border-bottom-left-radius: $border_radius_10;
                 border-top-left-radius: $border_radius_10;
                 z-index: -1;
+
+                @include media-maxwidth($smartphone_size) {
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
+                }
             }
         }
 
         .section_service_swicth_container_article_description {
-            display: flex;
-            justify-content: $justify_content_space_around;
-            align-items: center;
-            flex-direction: column;
-            padding: 20px;
+            @include flex-container($direction: $flex_direction_column,
+                $justify: $justify_content_space_around,
+                $align: $align_items_center);
+            padding: $spacing_20;
 
             .section_service_description_hidden {
                 @include media-maxwidth($deskop_size) {
-                    visibility: hidden;
-                    display: none;
+                    visibility: $visibility_hidden;
+                    display: $display_none;
                 }
             }
 
@@ -1115,11 +1157,16 @@ header {
                     $primary_color_bright_light_cyan,
                     $text_transform_none,
                     $letter_spacing_medium);
-                text-align: center;
+                text-align: $text_align_center;
 
                 @include media-maxwidth($deskop_size) {
-                    text-align: center;
-                    padding: 20px 0;
+                    text-align: $text_align_center;
+                    padding: $spacing_20 $spacing_0;
+                }
+
+                @include media-maxwidth($smartphone_size) {
+                    font-size: 22px;
+                    line-height: 1.3;
                 }
             }
 
@@ -1129,14 +1176,18 @@ header {
                     $neutral_white,
                     $text_transform_none,
                     $letter_spacing_light);
-                padding: 0 10%;
+                padding: $spacing_10 10%;
                 text-align: justify;
                 text-justify: distribute;
 
                 @include media-maxwidth($deskop_size) {
                     padding: 5px 0;
-                    text-align: center;
+                    text-align: $text_align_center;
                     line-height: 1.4;
+                }
+
+                @include media-maxwidth($smartphone_size) {
+                    display: none;
                 }
             }
 
@@ -1151,6 +1202,11 @@ header {
 
                 @include media-maxwidth($deskop_size) {
                     padding: 25px 0;
+                }
+
+                @include media-maxwidth($smartphone_size) {
+                    text-align: center;
+                    line-height: 1.4;
                 }
 
                 &:hover {
@@ -1174,14 +1230,22 @@ header {
         $background_repeat);
     background-image: url("/asset/connection_3.jpg");
     min-height: 100vh;
+
+    @include media-maxwidth($deskop_size) {
+        min-height: 0;
+    }
 }
 
 .section_crypto_list .section_crypto_list_scroll {
     @include flex-container($flex_direction_column);
-    position: relative;
+    position: $position_relative;
     width: 700px;
-    overflow: hidden;
-    mask-image: linear-gradient(90deg, transparent, $neutral_white, $neutral_white, transparent);
+    overflow: $overflow_hidden;
+    mask-image: linear-gradient(90deg,
+            $transparent,
+            $neutral_white,
+            $neutral_white,
+            $transparent);
 
     @include media-maxwidth($tablet_size) {
         width: 80%;
@@ -1200,7 +1264,7 @@ header {
 }
 
 .section_crypto_list_scroll .section_crypto_list_scroll_line span {
-    display: inline-flex;
+    display: $display_inline_flex;
     @include text-custom($font_size_1_1,
         $font_weight_normal,
         $neutral_white,
@@ -1249,7 +1313,7 @@ header {
     width: 100%;
 
     @include media-maxwidth($smartphone_size_530) {
-        margin: 40px 0;
+        margin: $spacing_40 $spacing_0;
     }
 
     .section_crypto_list_card {
@@ -1259,7 +1323,7 @@ header {
         @include dimensions($width: 150px, $height: 100px);
         background: $neutral_white;
         border-radius: $border_radius_10;
-        margin: 10px;
+        margin: $spacing_10;
 
         &:nth-child(1) {
             background: $primary_color_bright_light_cyan;
@@ -1267,18 +1331,18 @@ header {
         }
 
         &:nth-child(2) {
-            background: #0769f4;
-            box-shadow: 0 0 10px #0769f4;
+            background: $primary_color_bright_blue;
+            box-shadow: 0 0 10px $primary_color_bright_blue;
         }
 
         &:nth-child(3) {
-            background: #a852ff;
-            box-shadow: 0 0 10px #a852ff;
+            background: $primary_color_bright_violet;
+            box-shadow: 0 0 10px $primary_color_bright_violet;
         }
 
         &:nth-child(4) {
-            background: #ff00dd;
-            box-shadow: 0 0 10px #ff00dd;
+            background: $primary_color_pink;
+            box-shadow: 0 0 10px $primary_color_pink;
         }
 
         .section_crypto_list_card_title {
@@ -1296,16 +1360,22 @@ header {
 /* section_presentation_team */
 
 .section_presentation_team {
+    @include flex-container($direction: $flex_direction_column,
+        $justify: $justify_content_center,
+        $align: $align_items_center);
     min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_4.jpg");
     min-height: 100vh;
+
+    @include media-maxwidth($deskop_size) {
+        min-height: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 350px;
+    }
 }
 
 .section_presentation_team_title {
@@ -1315,6 +1385,10 @@ header {
         $text_transform_capitalize,
         $letter_spacing_strong);
     margin: 20px 0;
+
+    @include media-maxwidth($deskop_size) {
+        margin: 0;
+    }
 }
 
 .swiper {
@@ -1331,9 +1405,9 @@ header {
         background: $strong_black;
 
         .container_image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-container($direction: $flex_direction_row,
+                $justify: $justify_content_center,
+                $align: $align_items_center);
             height: 170px;
             background: $primary-color-light-cyan;
             border-top-left-radius: 20px;
@@ -1351,7 +1425,7 @@ header {
                 $neutral_white,
                 $text_transform_capitalize,
                 $letter_spacing_strong);
-            text-align: center;
+            text-align: $text_align_center;
             padding: 10px 0;
         }
 
@@ -1361,12 +1435,12 @@ header {
                 $primary-color-light-cyan,
                 $text_transform_capitalize,
                 $letter_spacing_medium);
-            text-align: center;
+            text-align: $text_align_center;
         }
 
         p {
 
-            text-align: center;
+            text-align: $text_align_center;
             letter-spacing: 1px;
             line-height: 1.2;
             padding: 10px 0;
@@ -1402,6 +1476,10 @@ header {
 .swiper-button-next::after,
 .swiper-button-prev::after {
     color: $neutral_white;
+
+    @include media-maxwidth($smartphone_size) {
+        display: none;
+    }
 }
 
 /* section_presentation_team_end */
@@ -1409,11 +1487,25 @@ header {
 /* line */
 
 .line {
-    background: linear-gradient(270deg, black, black, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary-color-light-cyan, $primary_color_bright_light_cyan, $primary_color_bright_light_cyan, black, black);
+    background: linear-gradient(270deg,
+            $strong_black,
+            $strong_black,
+            $primary_color_bright_light_cyan,
+            $primary_color_bright_light_cyan,
+            $primary-color-light-cyan,
+            $primary_color_bright_light_cyan,
+            $primary-color-light-cyan,
+            $primary_color_bright_light_cyan,
+            $primary_color_bright_light_cyan,
+            $strong_black,
+            $strong_black);
     height: 1px;
     opacity: 1;
-    border-radius: 30px;
+    border-radius: $border_radius_30;
     border: 0;
+    @include media-maxwidth($smartphone_size) {
+        margin: 40px;
+    }
 }
 
 /* line_end */
@@ -1421,28 +1513,39 @@ header {
 /* footer */
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-container($direction: $flex_direction_column,
+        $justify: $justify_content_space_between,
+        $align: $align_items_center);
     min-height: 40vh;
-    padding: 0 5%;
-    margin: 0 auto;
+    padding: $spacing_0 5%;
+    margin: $spacing_0 $auto;
+
+    @include media-maxwidth($smartphone_size) {
+        margin: 0;
+        display: block;
+    }
 }
 
 .footer_container {
-    margin: 25px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-container($direction: $flex_direction_column,
+        $justify: $justify_content_space_between);
+    margin: $spacing_25 $auto;
     height: 350px;
+
+    @include media-maxwidth($smartphone_size) {
+        display: block;
+    }
 }
 
 .footer_container_figure {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    display: $display_flex;
+    justify-content: $justify_content_center;
+    margin: $spacing_0 $auto;
     width: 300px;
+
+    @include media-maxwidth($smartphone_size) {
+        margin: 25px;
+    }
 
     .footer_container_figure_link {
         cursor: $cursor_pointer;
@@ -1459,7 +1562,7 @@ header {
     }
 
     .footer_container_figure_link_figcaption {
-        padding: 10px;
+        padding: $spacing_10;
 
     }
 
@@ -1469,26 +1572,26 @@ header {
 }
 
 .footer_container_info {
-    margin: 0 auto;
+    margin: $spacing_0 $auto;
 
     .footer_container_info_newsletter {
-        text-align: center;
+        text-align: $text_align_center;
 
         .footer_container_info_newsletter_input {
             width: 300px;
             height: 50px;
-            padding: 0 10px;
-            border: none;
-            border-left: solid 1px rgba(128, 128, 128, 0.8);
-            border-bottom: solid 1px rgba(128, 128, 128, 0.8);
+            padding: $spacing_0$spacing_10;
+            border: $border_none;
+            border-left: $border_solid $border_width_1 rgba(128, 128, 128, 0.8);
+            border-bottom: $border_solid $border_width_1 rgba(128, 128, 128, 0.8);
             outline: none;
-            background: transparent;
+            background: $transparent;
             color: $primary_color_bright_light_cyan;
             transition: 0.5s;
 
             &:hover {
-                border-left: solid 1px $primary_color_bright_light_cyan;
-                border-bottom: solid 1px $primary_color_bright_light_cyan;
+                border-left: $border_solid $border_width_1 $primary_color_bright_light_cyan;
+                border-bottom: $border_solid $border_width_1 $primary_color_bright_light_cyan;
             }
 
             &::placeholder {
@@ -1503,33 +1606,49 @@ header {
         .bx-right-arrow-alt {
             color: gray;
             font-size: $font_size_1_2;
-            position: relative;
+            position: $position_relative;
             right: 30px;
+
+            @include media-maxwidth($smartphone_size) {
+                display: none;
+            }
         }
     }
 }
 
 .footer_container_media {
-    display: flex;
-    margin: 0 auto;
+    display: $display_flex;
+    margin: $spacing_0 $auto;
 
-    .footer_container_media {
-        margin: 0 auto;
+    @include media-maxwidth($smartphone_size) {
+        margin: 20px auto;
+        flex-wrap: wrap;
     }
+
 }
 
 .footer_container_company_nav_bar {
-    display: flex;
-    flex-direction: column;
+    display: $display_flex;
+    flex-direction: $flex_direction_column;
 
     .footer_container_company_nav_bar_list {
-        display: flex;
-        margin: 20px auto;
+        display: $display_flex;
+        margin: $spacing_20 $auto;
+
+        @include media-maxwidth($smartphone_size) {
+            display: block;
+        }
 
         .footer_container_company_nav_bar_list_items {
-            display: flex;
-            margin: 0 20px;
+            display: $display_flex;
+            margin: $spacing_0 $spacing_20;
             font-size: $font_size_1_2;
+
+            @include media-maxwidth($smartphone_size) {
+                display: block;
+                text-align: center;
+                margin-top: 20px
+            }
 
             .footer_container_company_nav_bar_list_items_link {
                 @include text-custom($font_size_1_1,
@@ -1547,15 +1666,13 @@ header {
 }
 
 .footer_container_media_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-container($direction: $flex-direction_row, $justify: $justify_content_center, $align: $align_items_center);
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    margin: 0 15px;
+    margin: $spacing_0 $spacing_15;
     background: $primary_color_light_cyan;
-    border: solid 1px $neutral_white;
+    border: $border_solid $border_width_1 $neutral_white;
     color: $neutral_white;
     transition: 0.3s;
 
