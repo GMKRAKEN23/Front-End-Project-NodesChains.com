@@ -7,6 +7,89 @@
 // mixins
 @import 'mixins';
 
+/* Loader */
+#container_loader {
+    @include flex-container($direction: $flex-direction_row, 
+    $justify: $justify_content_center, 
+    $align: $align_items_center);
+    position: $position_fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $strong_black, $alpha: 0.6);
+    z-index: 100;
+
+    .container_loader_circle {
+        @include flex-container($direction: $flex-direction_row, 
+        $justify: $justify_content_center, 
+        $align: $align_items_center);
+        @include dimensions($width: $spacing_30, $height: $spacing_30);
+        border-radius: 50%;
+        margin: $spacing_10;
+        border: $border_solid $border_width_4 $primary_color_light_cyan;
+        animation: loadermove 1s linear infinite;
+
+        .dot {
+            @include dimensions($width: $spacing_10, $height: $spacing_10);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $primary_color_bright_light_cyan;
+            box-shadow: 0 0 50px $primary_color_bright_light_cyan;
+            animation: loaderscale 3s linear infinite;
+        }
+    }
+}
+
+.container_loader_circle:nth-child(1) {
+    transform: translateY(10px);
+}
+
+.container_loader_circle:nth-child(2) {
+    transform: translateY(-10px);
+}
+
+.container_loader_circle:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.container_loader_circle:nth-child(4) {
+    transform: translateY(-10px);
+}
+
+/* animation_keyframes_scale_loader */
+@keyframes loadermove{
+    0%{
+        box-shadow: 0 0 10px $primary-color-light-cyan;
+    }
+    50%{
+        box-shadow: 0 10px 20px $primary-color-light-cyan;
+        transform: scale(1);
+    }
+    100%{
+        
+        box-shadow: 0 0 30px $primary-color-light-cyan;
+    }
+}
+/* animation_keyframes_scale_loader_end */
+
+/* animation_keyframes_scale_dot */
+@keyframes loaderscale{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+/* animation_keyframes_scale_dot_end 
+/* loader_end */
+
 /* btn_reactive_additionnal_information */
 .reactive_additional_information_section_btn {
     cursor: $cursor_pointer;
@@ -1216,7 +1299,7 @@ header {
 
             @include media-maxwidth($deskop_size) {
                 text-align: $text_align_center;
-                line-height: 1.4;
+                line-height: $line_height_1_4;
             }
         }
     }
@@ -1290,7 +1373,7 @@ header {
                 $text_transform_capitalize,
                 $letter_spacing_strong);
             text-align: $text_align_center;
-            padding: 10px 0;
+            padding: $spacing_10 $spacing_0;
         }
 
         h3 {
