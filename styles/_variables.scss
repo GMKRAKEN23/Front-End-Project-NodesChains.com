@@ -27,6 +27,13 @@ $text_transform_lowercase: lowercase;
 $text_transform_capitalize: capitalize;
 $text_transform_none: none;
 
+// Line height
+
+$line_height_1_1 : 1.1;
+$line_height_1_2 : 1.2;
+$line_height_1_3 : 1.2;
+$line_height_1_4 : 1.2;
+
 // Text center
 $text_align_center: center;
 $text_align_right: right;
@@ -45,6 +52,7 @@ $primary_color_bright_light_cyan : #00FEFB;
 $primary_color_pink: #ff00dd;
 $primary_color_bright_violet : #a852ff;
 $primary_color_bright_blue: #0769f4;
+$secondary_color_gray: gray;
 $strong_black: #1e1c1c;
 $neutral_white: #fbfafa;
 
@@ -63,11 +71,13 @@ $letter_spacing_strong: 3px;
 $cursor_pointer: pointer;
 
 // Border
+$outline_none : none;
 $border_none: none;
 $border_solid: solid;
 $border_width_1: 1px;
 $border-width_2: 2px;
 $border_width_3: 3px;
+$border_width_4: 4px;
 $border_radius_5: 5px;
 $border_radius_10: 10px;
 $border_radius_15: 15px;
@@ -77,6 +87,10 @@ $border_radius_30: 30px;
 $border_radius_40: 40px;
 $border_radius_half: 50%;
 $border_radius_none: 0;
+
+// List 
+
+$list_style_none: none;
 
 // Position 
 

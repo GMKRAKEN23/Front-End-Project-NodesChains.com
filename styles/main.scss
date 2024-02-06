@@ -883,27 +883,27 @@ header {
 /* container_timer */
 .section_promotion_nft_container_promotion_timer {
     @include media-maxwidth($deskop_size) {
-        margin: 20px auto;
+        margin: $spacing_20 $auto;
     }
 
     @include media-maxwidth($smartphone_size_530) {
         width: 100%;
-        margin: 30px auto;
+        margin: $spacing_30 $auto;
     }
 
-    margin: 20px auto;
+    margin: $spacing_20 $auto;
 
     .section_promotion_nft_container_promotion_timer_time {
-        display: flex;
+        display: $display_flex;
 
         .section_promotion_nft_container_promotion_timer_time_box {
             width: 100px;
             height: 70px;
-            margin: 0 5px;
+            margin: $spacing_0 $spacing_5;
             border-radius: $border_radius_10;
 
             @include media-maxwidth($smartphone_size) {
-                padding: 0 10px;
+                padding: $spacing_0 $spacing_10;
             }
 
             @include text-custom($font_size_1_5,
@@ -911,9 +911,10 @@ header {
                 $strong_black,
                 $text_transform_none,
                 $letter_spacing_medium);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+            @include flex-container($direction: $flex-direction_row,
+                $justify: $justify_content_center, 
+                $align: $align_items_center); 
 
             &:nth-child(1) {
                 background: $primary_color_bright_light_cyan;
@@ -921,8 +922,8 @@ header {
             }
 
             &:nth-child(2) {
-                background: #ff00dd;
-                box-shadow: 0 0 10px #ff00dd;
+                background:$primary_color_pink;
+                box-shadow: 0 0 10px $primary_color_pink;
             }
 
             &:nth-child(3) {
@@ -931,26 +932,28 @@ header {
             }
 
             &:nth-child(4) {
-                background: #a852ff;
-                box-shadow: 0 0 10px #a852ff;
+                background: $primary_color_bright_violet;
+                box-shadow: 0 0 10px $primary_color_bright_violet;
             }
         }
     }
 }
 
 .section_promotion_nft_container_card_nft {
-    border: solid 4px $neutral_white;
-    border-radius: $border_radius_15;
+    @include border-properties($border_style: $border_solid, 
+    $border_width: $border_width_4, 
+    $border_color: $neutral_white, 
+    $radius:$border_radius_15);
     animation: move 3s linear infinite;
 
     @include media-maxwidth($deskop_size) {
-        margin: 70px auto;
+        margin: 70px $auto
     }
 
     @include media-maxwidth($smartphone_size_530) {
         width: 90%;
         height: 350px;
-        margin: 25px auto;
+        margin: $spacing_25 $auto;
 
     }
 
@@ -1001,24 +1004,24 @@ header {
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_4.jpg");
+    @include flex-container($direction: $flex-direction_column, 
+    $justify: $justify_content_center, 
+    $align:$align_items_center);
     width: 100%;
     min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
     @include media-maxwidth($deskop_size) {
         min-height: 0;
     }
 
     .section_service_company_container {
-        margin: 0 5%;
+        margin: $spacing_0 5%;
         width: 90%;
 
         .section_service_company_container_header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-container($direction: $flex-direction_row, 
+            $justify: $justify_content_space_between, 
+            $align:$align_items_center);
 
             .section_service_company_container_header_title {
                 @include text-custom($font_size_2,
@@ -1032,13 +1035,13 @@ header {
                 }
 
                 &:first-letter {
-                    text-transform: capitalize;
+                    text-transform: $text-transform_capitalize;
                 }
             }
 
             .section_service_company_container_header_menu {
                 position: $position_relative;
-                list-style: none;
+                list-style: $list_style_none;
                 display: $display_flex;
                 margin: $spacing_30 $spacing_0;
 
@@ -1101,8 +1104,8 @@ header {
     }
 
     .section_service_swicth_container {
-        display: flex;
-        justify-content: center;
+        display: $display_flex;
+        justify-content: $justify_content_center;
         margin: 5%;
         width: 90%;
 
@@ -1110,12 +1113,13 @@ header {
             @include media-minwidth($deskop_size) {
                 min-width: 1000px;
             }
-
             width: 1100px;
             height: 400px;
-            display: flex;
-            border: solid 1px $neutral_white;
-            border-radius: $border_radius_10;
+            display: $display_flex;
+            @include border-properties($border_style: $border_solid, 
+            $border_width: $border_width_1, 
+            $border_color: $neutral_white, 
+            $radius:$border_radius_10);
             box-shadow: 0 0 20px $neutral_white;
             background: $strong_black;
             z-index: 1;
@@ -1166,7 +1170,7 @@ header {
 
                 @include media-maxwidth($smartphone_size) {
                     font-size: 22px;
-                    line-height: 1.3;
+                    line-height: $line_height_1_3;
                 }
             }
 
@@ -1181,13 +1185,13 @@ header {
                 text-justify: distribute;
 
                 @include media-maxwidth($deskop_size) {
-                    padding: 5px 0;
+                    padding: $spacing_5 $spacing_0;
                     text-align: $text_align_center;
-                    line-height: 1.4;
+                    line-height: $line_height_1_4;
                 }
 
                 @include media-maxwidth($smartphone_size) {
-                    display: none;
+                    display: $display_none;
                 }
             }
 
@@ -1201,12 +1205,12 @@ header {
                 transition: 0.5s;
 
                 @include media-maxwidth($deskop_size) {
-                    padding: 25px 0;
+                    padding: $spacing_25 $spacing_0;
                 }
 
                 @include media-maxwidth($smartphone_size) {
-                    text-align: center;
-                    line-height: 1.4;
+                    text-align: $text_align_center;
+                    line-height: $line_height_1_4;
                 }
 
                 &:hover {
@@ -1270,11 +1274,11 @@ header {
         $neutral_white,
         $text_transform_none,
         $letter_spacing_medium);
-    padding: 10px 20px;
+    padding: $spacing_10 $spacing_20;
     background: $primary_color_light_cyan;
     box-shadow: 0 0 10px $primary_color_light_cyan;
     border-radius: $border_radius_5;
-    margin: 10px;
+    margin: $spacing_10;
     transition: 0.5s;
 }
 
@@ -1372,8 +1376,8 @@ header {
 
     @include media-maxwidth($deskop_size) {
         min-height: 0;
-        margin: 0 auto;
-        text-align: center;
+        margin: $spacing_0 $auto;
+        text-align: $text_align_center;
         width: 350px;
     }
 }
@@ -1384,10 +1388,10 @@ header {
         $neutral_white,
         $text_transform_capitalize,
         $letter_spacing_strong);
-    margin: 20px 0;
+    margin: $spacing_20 $spacing_0;
 
     @include media-maxwidth($deskop_size) {
-        margin: 0;
+        margin: $spacing_0;
     }
 }
 
@@ -1478,7 +1482,7 @@ header {
     color: $neutral_white;
 
     @include media-maxwidth($smartphone_size) {
-        display: none;
+        display: $display_none;
     }
 }
 
@@ -1533,7 +1537,7 @@ header {
     height: 350px;
 
     @include media-maxwidth($smartphone_size) {
-        display: block;
+        display: $display_block
     }
 }
 
@@ -1544,7 +1548,7 @@ header {
     width: 300px;
 
     @include media-maxwidth($smartphone_size) {
-        margin: 25px;
+        margin: $spacing_25;
     }
 
     .footer_container_figure_link {
@@ -1584,7 +1588,7 @@ header {
             border: $border_none;
             border-left: $border_solid $border_width_1 rgba(128, 128, 128, 0.8);
             border-bottom: $border_solid $border_width_1 rgba(128, 128, 128, 0.8);
-            outline: none;
+            outline: $outline_none;
             background: $transparent;
             color: $primary_color_bright_light_cyan;
             transition: 0.5s;
@@ -1604,13 +1608,13 @@ header {
         }
 
         .bx-right-arrow-alt {
-            color: gray;
+            color: $secondary_color_gray;
             font-size: $font_size_1_2;
             position: $position_relative;
             right: 30px;
 
             @include media-maxwidth($smartphone_size) {
-                display: none;
+                display: $display_none;
             }
         }
     }
@@ -1621,8 +1625,8 @@ header {
     margin: $spacing_0 $auto;
 
     @include media-maxwidth($smartphone_size) {
-        margin: 20px auto;
-        flex-wrap: wrap;
+        margin: $spacing_20 $auto;
+        flex-wrap: $flex_wrap;
     }
 
 }
@@ -1636,7 +1640,7 @@ header {
         margin: $spacing_20 $auto;
 
         @include media-maxwidth($smartphone_size) {
-            display: block;
+            display: $display_block;
         }
 
         .footer_container_company_nav_bar_list_items {
@@ -1645,9 +1649,9 @@ header {
             font-size: $font_size_1_2;
 
             @include media-maxwidth($smartphone_size) {
-                display: block;
-                text-align: center;
-                margin-top: 20px
+                display: $display_block;
+                text-align: $text_align_center;
+                margin-top: $spacing_20;
             }
 
             .footer_container_company_nav_bar_list_items_link {
@@ -1667,8 +1671,7 @@ header {
 
 .footer_container_media_link {
     @include flex-container($direction: $flex-direction_row, $justify: $justify_content_center, $align: $align_items_center);
-    width: 40px;
-    height: 40px;
+    @include dimensions($width: $spacing_40, $height: $spacing_40);
     border-radius: 100%;
     margin: $spacing_0 $spacing_15;
     background: $primary_color_light_cyan;

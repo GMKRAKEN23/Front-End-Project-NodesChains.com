@@ -918,7 +918,7 @@ header .active:hover {
 .section_promotion_nft_container_promotion_timer .section_promotion_nft_container_promotion_timer_time .section_promotion_nft_container_promotion_timer_time_box {
   width: 100px;
   height: 70px;
-  margin: 0 5px;
+  margin: 0px 5px;
   border-radius: 10px;
   font-size: 1.5rem;
   font-weight: 700;
@@ -926,12 +926,14 @@ header .active:hover {
   text-transform: none;
   letter-spacing: 2px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 376px) {
   .section_promotion_nft_container_promotion_timer .section_promotion_nft_container_promotion_timer_time .section_promotion_nft_container_promotion_timer_time_box {
-    padding: 0 10px;
+    padding: 0px 10px;
   }
 }
 .section_promotion_nft_container_promotion_timer .section_promotion_nft_container_promotion_timer_time .section_promotion_nft_container_promotion_timer_time_box:nth-child(1) {
@@ -952,8 +954,8 @@ header .active:hover {
 }
 
 .section_promotion_nft_container_card_nft {
-  border: solid 4px #fbfafa;
   border-radius: 15px;
+  border: 4px solid #fbfafa;
   animation: move 3s linear infinite;
 }
 @media (max-width: 1024px) {
@@ -1011,11 +1013,13 @@ header .active:hover {
   background-position: center;
   background-repeat: repeat;
   background-image: url("/asset/connection_4.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 @media (max-width: 1024px) {
   .section_service_company {
@@ -1023,13 +1027,15 @@ header .active:hover {
   }
 }
 .section_service_company .section_service_company_container {
-  margin: 0 5%;
+  margin: 0px 5%;
   width: 90%;
 }
 .section_service_company .section_service_company_container .section_service_company_container_header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .section_service_company .section_service_company_container .section_service_company_container_header .section_service_company_container_header_title {
   font-size: 2rem;
@@ -1112,8 +1118,8 @@ header .active:hover {
   width: 1100px;
   height: 400px;
   display: flex;
-  border: solid 1px #fbfafa;
   border-radius: 10px;
+  border: 1px solid #fbfafa;
   box-shadow: 0 0 20px #fbfafa;
   background: #1e1c1c;
   z-index: 1;
@@ -1171,7 +1177,7 @@ header .active:hover {
 @media (max-width: 376px) {
   .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_title {
     font-size: 22px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
 }
 .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_paragraph {
@@ -1186,9 +1192,9 @@ header .active:hover {
 }
 @media (max-width: 1024px) {
   .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_paragraph {
-    padding: 5px 0;
+    padding: 5px 0px;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 @media (max-width: 376px) {
@@ -1207,13 +1213,13 @@ header .active:hover {
 }
 @media (max-width: 1024px) {
   .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_link {
-    padding: 25px 0;
+    padding: 25px 0px;
   }
 }
 @media (max-width: 376px) {
   .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_link {
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_link:hover {
@@ -1375,7 +1381,7 @@ header .active:hover {
 @media (max-width: 1024px) {
   .section_presentation_team {
     min-height: 0;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
     width: 350px;
   }
@@ -1387,11 +1393,11 @@ header .active:hover {
   color: #fbfafa;
   text-transform: capitalize;
   letter-spacing: 3px;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 @media (max-width: 1024px) {
   .section_presentation_team_title {
-    margin: 0;
+    margin: 0px;
   }
 }
 
