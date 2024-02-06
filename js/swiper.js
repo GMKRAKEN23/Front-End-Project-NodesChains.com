@@ -1,4 +1,8 @@
-let swiper = new Swiper('.swiper', {
+// function who swipe elements 
+function swiperCard(){
+
+  // Object swiper of the library swiper.js
+  let swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
     slidesPerView: 3,
@@ -17,4 +21,8 @@ let swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
-  
+
+}
+
+// export the function swiperCard
+export {swiperCard};

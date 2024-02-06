@@ -154,6 +154,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 35px;
+  /* header_logo */
+  /* header_logo_end */
 }
 @media (min-width: 376px) {
   header {
@@ -419,6 +421,7 @@ header .active:hover {
 
 /* nav_bar_dropdown_end */
 /* header_end */
+/* section_presentation */
 .section_presentation {
   display: flex;
   flex-direction: column;
@@ -652,6 +655,7 @@ header .active:hover {
     box-shadow: 0 0 5px #c5c5c5;
   }
 }
+/* header_card_bank */
 .article_header_card_bank {
   display: flex;
   flex-direction: row;
@@ -713,7 +717,6 @@ header .active:hover {
 /* section_buy_crypto_end */
 /* section_most_traded_cryptocurrencies */
 .section_most_traded_cryptocurrencies {
-  min-height: 80vh;
   min-height: 40vh;
   padding: 0px 5%;
   background-size: cover;
@@ -832,6 +835,8 @@ header .active:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 1024px) {
   .section_promotion_nft_container_promotion {
@@ -839,7 +844,7 @@ header .active:hover {
   }
 }
 .section_promotion_nft_container_promotion .section_promotion_nft_container_promotion_title {
-  line-height: 1.4;
+  line-height: 1.2;
   font-size: 2rem;
   font-weight: normal;
   color: #fbfafa;
@@ -864,7 +869,7 @@ header .active:hover {
 @media (max-width: 1024px) {
   .section_promotion_nft_container_promotion .section_promotion_nft_container_promotion_subtitle {
     margin: 20px auto;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 .section_promotion_nft_container_promotion .section_promotion_nft_container_promotion_paragraph {
@@ -875,7 +880,7 @@ header .active:hover {
   letter-spacing: 2px;
   text-align: center;
   padding: 25px 5%;
-  line-height: 1.3;
+  line-height: 1.2;
   text-align: justify;
   text-justify: distribute;
 }
@@ -893,12 +898,11 @@ header .active:hover {
   text-align: center;
   color: #fbfafa;
   font-size: 1.2rem;
-  transition: 0.5s;
   margin-top: 20px;
   padding: 15px 20px;
-  transition: 0.5s;
   text-transform: capitalize;
-  margin: 0 auto;
+  margin: 0px auto;
+  transition: 0.5s;
 }
 .section_promotion_nft_container_promotion .section_promotion_nft_container_promotion_link:hover {
   background: #1786F9;
@@ -1247,7 +1251,7 @@ header .active:hover {
   background-position: center;
   background-repeat: repeat;
   background-image: url("/asset/connection_3.jpg");
-  margin: 30px 0;
+  margin: 30px 0px;
 }
 @media (max-width: 1024px) {
   .section_crypto_list {
@@ -1409,11 +1413,14 @@ header .active:hover {
   }
 }
 
+/* swiper */
 .swiper {
   width: 1100px;
   height: 400px;
 }
 
+/* swiper_end */
+/* card_team_swiper */
 .card .card_container {
   margin: 5px;
   outline: solid 3px #fbfafa;
@@ -1457,13 +1464,13 @@ header .active:hover {
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.2;
-  padding: 10px 0;
+  padding: 10px 0px;
   color: #fbfafa;
 }
 .card .card_container .container_btn {
   width: 200px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .card .card_container a {
   padding: 7px 14px;
@@ -1476,12 +1483,16 @@ header .active:hover {
   color: #1e1c1c;
 }
 
+/* card_team_swiper */
+/* swiper_slide */
 .swiper-slide {
   width: 320px;
   height: 500px;
   margin: 10px 0px;
 }
 
+/* swiper_slide */
+/* swiper_slide_button */
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #fbfafa;
@@ -1493,6 +1504,7 @@ header .active:hover {
   }
 }
 
+/* swiper_slide_button_end */
 /* section_presentation_team_end */
 /* line */
 .line {
@@ -1628,6 +1640,7 @@ header .active:hover {
   }
 }
 
+/* footer_container_media */
 .footer_container_media {
   display: flex;
   margin: 0px auto;
@@ -1639,6 +1652,7 @@ header .active:hover {
   }
 }
 
+/* footer_container_media_end */
 .footer_container_company_nav_bar {
   display: flex;
   flex-direction: column;
@@ -1677,6 +1691,7 @@ header .active:hover {
   color: #1786F9;
 }
 
+/* footer_media_link */
 .footer_container_media_link {
   display: flex;
   flex-direction: row;
@@ -1700,4 +1715,5 @@ header .active:hover {
   color: #1e1c1c;
 }
 
+/* footer_media_link_end */
 /* footer_end *//*# sourceMappingURL=main.css.map */

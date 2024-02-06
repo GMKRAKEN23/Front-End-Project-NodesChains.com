@@ -1,12 +1,13 @@
-
+// mixin
 @mixin flex-container($direction: row, $justify: center, $align: center, $wrap: wrap) {
-    display: flex;
+    display: $display_flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
     flex-wrap: $wrap;
 }
 
+// mixin custom text
 @mixin text-custom($font_size, $font_weight, $text_color, $text_transform, $letter_spacing) {
     font-size: $font_size;
     font-weight: $font_weight;
@@ -15,6 +16,7 @@
     letter-spacing: $letter_spacing;
 }
 
+// mixin text gradient (logo)
 @mixin text-gradient($background_image, $background_clip, $text_fill_color) {
     background-image: $background_image;
     background-clip: $background_clip;
@@ -22,28 +24,33 @@
     -moz-text-fill-color: $text_fill_color;
 }
 
+// mixin dimensions
 @mixin dimensions($width: auto, $height: auto) {
     width: $width;
     height: $height;
 }
 
+// mixin background 
 @mixin background-properties($background_size, $background_position, $background_repeat) {
     background-size: $background_size;
     background-position: $background_position;
     background-repeat: $background_repeat;
 }
 
+// mixin border
 @mixin border-properties($border_style: $border_solid, $border_width: $border, $border_color: black, $radius:$border_radius_none) {
     border-radius: $radius;
     border: $border-width $border_style $border-color;
 }
 
+// mixin max-width
 @mixin media-maxwidth($screensize) {
     @media (max-width: $screensize) {
         @content;
     }
 }
 
+// mixin min-width
 @mixin media-minwidth($screensize) {
     @media (min-width: $screensize) {
         @content;
