@@ -715,97 +715,6 @@ header .active:hover {
 
 /* section_buy_crypto card_bank_end */
 /* section_buy_crypto_end */
-/* section_most_traded_cryptocurrencies */
-.section_most_traded_cryptocurrencies {
-  min-height: 40vh;
-  padding: 0px 5%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  background-image: url("/asset/connection_3.jpg");
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 779px) {
-  .section_most_traded_cryptocurrencies {
-    display: none;
-  }
-}
-.section_most_traded_cryptocurrencies .section_most_traded_cryptocurrencies_title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fbfafa;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-  text-align: center;
-  margin: 20px 0px;
-}
-
-.section_most_traded_cryptocurrencies_container {
-  background: #1e1c1c;
-  border-radius: 25px;
-  border: solid 2px #00FEFB;
-  box-shadow: 0 0 10px #1786F9;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 20px auto;
-  width: 900px;
-  height: 500px;
-  padding: 20px;
-}
-@media (max-width: 1024px) {
-  .section_most_traded_cryptocurrencies_container {
-    width: 70%;
-    height: auto;
-  }
-}
-.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_title {
-  margin: 20px;
-  font-weight: normal;
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: #00FEFB;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  text-align: left;
-}
-@media (max-width: 1024px) {
-  .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_title {
-    text-align: center;
-  }
-}
-.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list {
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 1024px) {
-  .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list .section_most_traded_cryptocurrencies_container_legend_item {
-  margin: 20px;
-  font-weight: normal;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #fbfafa;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  text-align: left;
-}
-@media (max-width: 1024px) {
-  .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list .section_most_traded_cryptocurrencies_container_legend_item {
-    text-align: center;
-    line-height: 1.4;
-  }
-}
-
-/* section_most_traded_cryptocurrencies_end */
 /* section_section_promotion_nft */
 .section_promotion_nft {
   width: 100%;
@@ -1240,6 +1149,225 @@ header .active:hover {
 }
 
 /* section_service_company_end */
+/* section_most_traded_cryptocurrencies */
+.section_most_traded_cryptocurrencies {
+  min-height: 40vh;
+  padding: 0px 5%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("/asset/connection_3.jpg");
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 779px) {
+  .section_most_traded_cryptocurrencies {
+    display: none;
+  }
+}
+.section_most_traded_cryptocurrencies .section_most_traded_cryptocurrencies_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.section_most_traded_cryptocurrencies_container {
+  background: #1e1c1c;
+  border-radius: 25px;
+  border: solid 2px #00FEFB;
+  box-shadow: 0 0 10px #1786F9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 900px;
+  height: 500px;
+  padding: 20px;
+}
+@media (max-width: 1024px) {
+  .section_most_traded_cryptocurrencies_container {
+    width: 70%;
+    height: auto;
+  }
+}
+.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_title {
+  margin: 20px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #00FEFB;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_title {
+    text-align: center;
+  }
+}
+.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list .section_most_traded_cryptocurrencies_container_legend_item {
+  margin: 20px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list .section_most_traded_cryptocurrencies_container_legend_item {
+    text-align: center;
+    line-height: 1.4;
+  }
+}
+
+/* section_most_traded_cryptocurrencies_end */
+/* section_presentation_team */
+.section_presentation_team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("/asset/connection_4.jpg");
+}
+@media (max-width: 1024px) {
+  .section_presentation_team {
+    min-height: 0;
+    margin: 0px auto;
+    text-align: center;
+    width: 350px;
+  }
+}
+
+.section_presentation_team_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  margin: 20px 0px;
+}
+@media (max-width: 1024px) {
+  .section_presentation_team_title {
+    margin: 0px;
+  }
+}
+
+/* swiper */
+.swiper {
+  width: 1100px;
+  height: 400px;
+}
+
+/* swiper_end */
+/* card_team_swiper */
+.card .card_container {
+  margin: 5px;
+  outline: solid 3px #fbfafa;
+  border-radius: 20px;
+  height: 380px;
+  background: #1e1c1c;
+}
+.card .card_container .container_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 170px;
+  background: #1786F9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card .card_container .container_description {
+  padding: 10px 20px;
+  height: 150px;
+}
+.card .card_container h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 10px 0;
+}
+.card .card_container h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1786F9;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.card .card_container p {
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 10px 0px;
+  color: #fbfafa;
+}
+.card .card_container .container_btn {
+  width: 200px;
+  text-align: center;
+  margin: 0px auto;
+}
+.card .card_container a {
+  padding: 7px 14px;
+  background: #1786F9;
+  border-radius: 10px;
+  color: #fbfafa;
+  transition: 0.3s;
+}
+.card .card_container a:hover {
+  color: #1e1c1c;
+}
+
+/* card_team_swiper */
+/* swiper_slide */
+.swiper-slide {
+  width: 320px;
+  height: 500px;
+  margin: 10px 0px;
+}
+
+/* swiper_slide */
+/* swiper_slide_button */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fbfafa;
+}
+@media (max-width: 376px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
+/* swiper_slide_button_end */
+/* section_presentation_team_end */
 /* section_crypto_list */
 .section_crypto_list {
   display: flex;
@@ -1378,134 +1506,6 @@ header .active:hover {
 }
 
 /* section_crypto_list_end */
-/* section_presentation_team */
-.section_presentation_team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  background-image: url("/asset/connection_4.jpg");
-}
-@media (max-width: 1024px) {
-  .section_presentation_team {
-    min-height: 0;
-    margin: 0px auto;
-    text-align: center;
-    width: 350px;
-  }
-}
-
-.section_presentation_team_title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fbfafa;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-  margin: 20px 0px;
-}
-@media (max-width: 1024px) {
-  .section_presentation_team_title {
-    margin: 0px;
-  }
-}
-
-/* swiper */
-.swiper {
-  width: 1100px;
-  height: 400px;
-}
-
-/* swiper_end */
-/* card_team_swiper */
-.card .card_container {
-  margin: 5px;
-  outline: solid 3px #fbfafa;
-  border-radius: 20px;
-  height: 380px;
-  background: #1e1c1c;
-}
-.card .card_container .container_image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 170px;
-  background: #1786F9;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.card .card_container .container_description {
-  padding: 10px 20px;
-  height: 150px;
-}
-.card .card_container h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #fbfafa;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-  text-align: center;
-  padding: 10px 0;
-}
-.card .card_container h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1786F9;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  text-align: center;
-}
-.card .card_container p {
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  padding: 10px 0px;
-  color: #fbfafa;
-}
-.card .card_container .container_btn {
-  width: 200px;
-  text-align: center;
-  margin: 0px auto;
-}
-.card .card_container a {
-  padding: 7px 14px;
-  background: #1786F9;
-  border-radius: 10px;
-  color: #fbfafa;
-  transition: 0.3s;
-}
-.card .card_container a:hover {
-  color: #1e1c1c;
-}
-
-/* card_team_swiper */
-/* swiper_slide */
-.swiper-slide {
-  width: 320px;
-  height: 500px;
-  margin: 10px 0px;
-}
-
-/* swiper_slide */
-/* swiper_slide_button */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: #fbfafa;
-}
-@media (max-width: 376px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none;
-  }
-}
-
-/* swiper_slide_button_end */
-/* section_presentation_team_end */
 /* line */
 .line {
   background: linear-gradient(270deg, #1e1c1c, #1e1c1c, #00FEFB, #00FEFB, #1786F9, #00FEFB, #1786F9, #00FEFB, #00FEFB, #1e1c1c, #1e1c1c);

@@ -685,95 +685,6 @@ header {
 
 /* section_buy_crypto_end */
 
-/* section_most_traded_cryptocurrencies */
-.section_most_traded_cryptocurrencies {
-    min-height: 40vh;
-    padding: $spacing_0 5%;
-    @include background-properties($background_size_cover,
-        $background_position_center,
-        $background_repeat);
-    background-image: url("/asset/connection_3.jpg");
-
-    @include media-maxwidth($tablet_size) {
-        display: $display_none;
-    }
-
-    .section_most_traded_cryptocurrencies_title {
-        @include text-custom($font_size_2,
-            $font_weight_medium,
-            $neutral_white,
-            $text_transform_capitalize,
-            $letter_spacing_strong);
-        text-align: $text_align_center;
-        margin: $spacing_20 $spacing_0;
-    }
-
-    display: $display_flex;
-    flex-direction: $flex_direction_column;
-}
-
-.section_most_traded_cryptocurrencies_container {
-    background: $strong_black;
-    border-radius: $border_radius_25;
-    border: $border_solid $border-width_2 $primary_color_bright_light_cyan;
-    box-shadow: 0 0 10px $primary-color-light-cyan;
-    @include flex-container($flex_direction_row,
-        $justify_content_space_around,
-        $align_items_center);
-    margin: $spacing_20 $auto;
-    width: 900px;
-    height: 500px;
-    padding: $spacing_20;
-
-    @include media-maxwidth($deskop_size) {
-        width: 70%;
-        height: auto;
-    }
-
-    .section_most_traded_cryptocurrencies_container_legend_title {
-        margin: $spacing_20;
-        font-weight: $font_weight_normal;
-        @include text-custom($font_size_1_2,
-            $font_weight_strong,
-            $primary_color_bright_light_cyan,
-            $text_transform_capitalize,
-            $letter_spacing_medium);
-        text-align: $text_align_left;
-
-        @include media-maxwidth($deskop_size) {
-            text-align: $text_align_center;
-        }
-    }
-
-    .section_most_traded_cryptocurrencies_container_legend_list {
-        display: $display_flex;
-        flex-direction: $flex_direction_column;
-
-        @include media-maxwidth($deskop_size) {
-            flex-direction: $flex-direction_row;
-            flex-wrap: $flex_wrap;
-            justify-content: $justify_content_center;
-        }
-
-        .section_most_traded_cryptocurrencies_container_legend_item {
-            margin: $spacing_20;
-            font-weight: $font_weight_normal;
-            @include text-custom($font_size_1_2,
-                $font_weight_normal,
-                $neutral_white,
-                $text_transform_capitalize,
-                $letter_spacing_medium);
-            text-align: $text_align_left;
-
-            @include media-maxwidth($deskop_size) {
-                text-align: $text_align_center;
-                line-height: 1.4;
-            }
-        }
-    }
-}
-/* section_most_traded_cryptocurrencies_end */
-
 /* section_section_promotion_nft */
 .section_promotion_nft {
     width: 100%;
@@ -1215,6 +1126,225 @@ header {
 }
 /* section_service_company_end */
 
+/* section_most_traded_cryptocurrencies */
+.section_most_traded_cryptocurrencies {
+    min-height: 40vh;
+    padding: $spacing_0 5%;
+    @include background-properties($background_size_cover,
+        $background_position_center,
+        $background_repeat);
+    background-image: url("/asset/connection_3.jpg");
+
+    @include media-maxwidth($tablet_size) {
+        display: $display_none;
+    }
+
+    .section_most_traded_cryptocurrencies_title {
+        @include text-custom($font_size_2,
+            $font_weight_medium,
+            $neutral_white,
+            $text_transform_capitalize,
+            $letter_spacing_strong);
+        text-align: $text_align_center;
+        margin: $spacing_20 $spacing_0;
+    }
+
+    display: $display_flex;
+    flex-direction: $flex_direction_column;
+}
+
+.section_most_traded_cryptocurrencies_container {
+    background: $strong_black;
+    border-radius: $border_radius_25;
+    border: $border_solid $border-width_2 $primary_color_bright_light_cyan;
+    box-shadow: 0 0 10px $primary-color-light-cyan;
+    @include flex-container($flex_direction_row,
+        $justify_content_space_around,
+        $align_items_center);
+    margin: $spacing_20 $auto;
+    width: 900px;
+    height: 500px;
+    padding: $spacing_20;
+
+    @include media-maxwidth($deskop_size) {
+        width: 70%;
+        height: auto;
+    }
+
+    .section_most_traded_cryptocurrencies_container_legend_title {
+        margin: $spacing_20;
+        font-weight: $font_weight_normal;
+        @include text-custom($font_size_1_2,
+            $font_weight_strong,
+            $primary_color_bright_light_cyan,
+            $text_transform_capitalize,
+            $letter_spacing_medium);
+        text-align: $text_align_left;
+
+        @include media-maxwidth($deskop_size) {
+            text-align: $text_align_center;
+        }
+    }
+
+    .section_most_traded_cryptocurrencies_container_legend_list {
+        display: $display_flex;
+        flex-direction: $flex_direction_column;
+
+        @include media-maxwidth($deskop_size) {
+            flex-direction: $flex-direction_row;
+            flex-wrap: $flex_wrap;
+            justify-content: $justify_content_center;
+        }
+
+        .section_most_traded_cryptocurrencies_container_legend_item {
+            margin: $spacing_20;
+            font-weight: $font_weight_normal;
+            @include text-custom($font_size_1_2,
+                $font_weight_normal,
+                $neutral_white,
+                $text_transform_capitalize,
+                $letter_spacing_medium);
+            text-align: $text_align_left;
+
+            @include media-maxwidth($deskop_size) {
+                text-align: $text_align_center;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+/* section_most_traded_cryptocurrencies_end */
+
+/* section_presentation_team */
+.section_presentation_team {
+    @include flex-container($direction: $flex_direction_column,
+        $justify: $justify_content_center,
+        $align: $align_items_center);
+    @include background-properties($background_size_cover,
+        $background_position_center,
+        $background_repeat);
+    background-image: url("/asset/connection_4.jpg");
+
+    @include media-maxwidth($deskop_size) {
+        min-height: 0;
+        margin: $spacing_0 $auto;
+        text-align: $text_align_center;
+        width: 350px;
+    }
+}
+
+.section_presentation_team_title {
+    @include text-custom($font_size_2,
+        $font_weight_medium,
+        $neutral_white,
+        $text_transform_capitalize,
+        $letter_spacing_strong);
+    margin: $spacing_20 $spacing_0;
+
+    @include media-maxwidth($deskop_size) {
+        margin: $spacing_0;
+    }
+}
+
+/* swiper */
+.swiper {
+    width: 1100px;
+    height: 400px;
+}
+/* swiper_end */
+
+/* card_team_swiper */
+.card {
+    .card_container {
+        margin: 5px;
+        outline: solid 3px $neutral_white;
+        border-radius: 20px;
+        height: 380px;
+        background: $strong_black;
+
+        .container_image {
+            @include flex-container($direction: $flex_direction_row,
+                $justify: $justify_content_center,
+                $align: $align_items_center);
+            height: 170px;
+            background: $primary-color-light-cyan;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .container_description {
+            padding: 10px 20px;
+            height: 150px;
+        }
+
+        h2 {
+            @include text-custom($font_size_1,
+                $font_weight_medium,
+                $neutral_white,
+                $text_transform_capitalize,
+                $letter_spacing_strong);
+            text-align: $text_align_center;
+            padding: 10px 0;
+        }
+
+        h3 {
+            @include text-custom($font_size_1,
+                $font_weight_medium,
+                $primary-color-light-cyan,
+                $text_transform_capitalize,
+                $letter_spacing_medium);
+            text-align: $text_align_center;
+        }
+
+        p {
+            text-align: $text_align_center;
+            letter-spacing: $letter_spacing_light;
+            line-height: $line_height_1_2;
+            padding: $spacing_10 $spacing_0;
+            color: $neutral_white;
+        }
+
+        .container_btn {
+            width: 200px;
+            text-align: $text_align_center;
+            margin: $spacing_0 $auto;
+        }
+
+        a {
+            padding: 7px 14px;
+            background: $primary-color-light-cyan;
+            border-radius: $border_radius_10;
+            color: $neutral_white;
+            transition: 0.3s;
+
+            &:hover {
+                color: $strong_black;
+            }
+        }
+    }
+}
+/* card_team_swiper */
+
+/* swiper_slide */
+.swiper-slide {
+    width: 320px;
+    height: 500px;
+    margin: $spacing_10 $spacing_0;
+}
+/* swiper_slide */
+
+/* swiper_slide_button */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: $neutral_white;
+
+    @include media-maxwidth($smartphone_size) {
+        display: $display_none;
+    }
+}
+/* swiper_slide_button_end */
+/* section_presentation_team_end */
+
 /* section_crypto_list */
 .section_crypto_list {
     @include flex-container($flex_direction_column,
@@ -1351,136 +1481,6 @@ header {
     }
 }
 /* section_crypto_list_end */
-
-/* section_presentation_team */
-.section_presentation_team {
-    @include flex-container($direction: $flex_direction_column,
-        $justify: $justify_content_center,
-        $align: $align_items_center);
-    @include background-properties($background_size_cover,
-        $background_position_center,
-        $background_repeat);
-    background-image: url("/asset/connection_4.jpg");
-
-    @include media-maxwidth($deskop_size) {
-        min-height: 0;
-        margin: $spacing_0 $auto;
-        text-align: $text_align_center;
-        width: 350px;
-    }
-}
-
-.section_presentation_team_title {
-    @include text-custom($font_size_2,
-        $font_weight_medium,
-        $neutral_white,
-        $text_transform_capitalize,
-        $letter_spacing_strong);
-    margin: $spacing_20 $spacing_0;
-
-    @include media-maxwidth($deskop_size) {
-        margin: $spacing_0;
-    }
-}
-
-/* swiper */
-.swiper {
-    width: 1100px;
-    height: 400px;
-}
-/* swiper_end */
-
-/* card_team_swiper */
-.card {
-    .card_container {
-        margin: 5px;
-        outline: solid 3px $neutral_white;
-        border-radius: 20px;
-        height: 380px;
-        background: $strong_black;
-
-        .container_image {
-            @include flex-container($direction: $flex_direction_row,
-                $justify: $justify_content_center,
-                $align: $align_items_center);
-            height: 170px;
-            background: $primary-color-light-cyan;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-        .container_description {
-            padding: 10px 20px;
-            height: 150px;
-        }
-
-        h2 {
-            @include text-custom($font_size_1,
-                $font_weight_medium,
-                $neutral_white,
-                $text_transform_capitalize,
-                $letter_spacing_strong);
-            text-align: $text_align_center;
-            padding: 10px 0;
-        }
-
-        h3 {
-            @include text-custom($font_size_1,
-                $font_weight_medium,
-                $primary-color-light-cyan,
-                $text_transform_capitalize,
-                $letter_spacing_medium);
-            text-align: $text_align_center;
-        }
-
-        p {
-            text-align: $text_align_center;
-            letter-spacing: $letter_spacing_light;
-            line-height: $line_height_1_2;
-            padding: $spacing_10 $spacing_0;
-            color: $neutral_white;
-        }
-
-        .container_btn {
-            width: 200px;
-            text-align: $text_align_center;
-            margin: $spacing_0 $auto;
-        }
-
-        a {
-            padding: 7px 14px;
-            background: $primary-color-light-cyan;
-            border-radius: $border_radius_10;
-            color: $neutral_white;
-            transition: 0.3s;
-
-            &:hover {
-                color: $strong_black;
-            }
-        }
-    }
-}
-/* card_team_swiper */
-
-/* swiper_slide */
-.swiper-slide {
-    width: 320px;
-    height: 500px;
-    margin: $spacing_10 $spacing_0;
-}
-/* swiper_slide */
-
-/* swiper_slide_button */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    color: $neutral_white;
-
-    @include media-maxwidth($smartphone_size) {
-        display: $display_none;
-    }
-}
-/* swiper_slide_button_end */
-/* section_presentation_team_end */
 
 /* line */
 .line {
