@@ -552,13 +552,14 @@ header .active:hover {
 }
 
 .section_buy_crypto_container {
+  width: 100%;
+  min-height: 80vh;
+  margin: 40px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 70vh;
-  width: 100%;
 }
 @media (max-width: 1024px) {
   .section_buy_crypto_container {
@@ -1058,7 +1059,6 @@ header .active:hover {
 }
 .section_service_company .section_service_swicth_container .section_service_swicth_container_article .section_service_swicth_container_article_image {
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   z-index: -1;
 }
@@ -1066,6 +1066,13 @@ header .active:hover {
   .section_service_company .section_service_swicth_container .section_service_swicth_container_article .section_service_swicth_container_article_image {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .section_service_company .section_service_swicth_container .section_service_swicth_container_article .section_service_swicth_container_article_image {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0;
   }
 }
 .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description {
@@ -1117,6 +1124,11 @@ header .active:hover {
     padding: 5px 0px;
     text-align: center;
     line-height: 1.2;
+  }
+}
+@media (max-width: 530px) {
+  .section_service_company .section_service_swicth_container .section_service_swicth_container_article_description .section_service_swicth_container_article_description_paragraph {
+    display: none;
   }
 }
 @media (max-width: 376px) {
@@ -1242,11 +1254,6 @@ header .active:hover {
 /* section_most_traded_cryptocurrencies_end */
 /* section_presentation_team */
 .section_presentation_team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -1268,6 +1275,7 @@ header .active:hover {
   text-transform: capitalize;
   letter-spacing: 3px;
   margin: 20px 0px;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .section_presentation_team_title {
@@ -1359,7 +1367,7 @@ header .active:hover {
 .swiper-button-prev::after {
   color: #fbfafa;
 }
-@media (max-width: 376px) {
+@media (max-width: 1024px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
@@ -1380,9 +1388,12 @@ header .active:hover {
   background-repeat: repeat;
   background-image: url("/asset/connection_3.jpg");
   margin: 30px 0px;
+  padding: 40px 0;
 }
 @media (max-width: 1024px) {
   .section_crypto_list {
+    padding: 0px;
+    margin: 0px;
     min-height: 0;
   }
 }
@@ -1396,6 +1407,7 @@ header .active:hover {
   position: relative;
   width: 700px;
   overflow: hidden;
+  margin-top: 40px;
   -webkit-mask-image: linear-gradient(90deg, transparent, #fbfafa, #fbfafa, transparent);
           mask-image: linear-gradient(90deg, transparent, #fbfafa, #fbfafa, transparent);
 }

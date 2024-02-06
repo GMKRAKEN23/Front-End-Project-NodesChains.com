@@ -527,7 +527,10 @@ header {
     }
 }
 
-.section_buy_crypto_container {
+.section_buy_crypto_container {    
+    width: 100%;
+    min-height: 80vh;
+    margin: 40px 0;
     @include flex-container($flex_direction_row,
         $justify_content_space_around,
         $align_items_center,
@@ -536,9 +539,6 @@ header {
     @include media-maxwidth($deskop_size) {
         min-height: 0;
     }
-
-    min-height: 70vh;
-    width: 100%;
 }
 
 .section_buy_crypto_title {
@@ -1030,18 +1030,22 @@ header {
                 flex-direction: $flex_direction_column;
                 width: 90%;
                 height: $auto;
-
             }
 
             .section_service_swicth_container_article_image {
                 border-top-left-radius: $border_radius_10;
-                border-top-right-radius: $border_radius_10;
                 border-bottom-left-radius: $border_radius_10;
                 z-index: -1;
 
                 @include media-maxwidth($smartphone_size) {
                     border-top-right-radius: $border_radius_30;
                     border-top-left-radius: $border_radius_30;
+                }
+
+                @include media-maxwidth($deskop_size) {
+                    border-top-right-radius: $border_radius_30;
+                    border-top-left-radius: $border_radius_30;
+                    border-bottom-left-radius: 0;
                 }
             }
         }
@@ -1092,6 +1096,10 @@ header {
                     padding: $spacing_5 $spacing_0;
                     text-align: $text_align_center;
                     line-height: $line_height_1_4;
+                }
+
+                @include media-maxwidth($smartphone_size_530) {
+                    display: $display_none;
                 }
 
                 @include media-maxwidth($smartphone_size) {
@@ -1217,9 +1225,7 @@ header {
 
 /* section_presentation_team */
 .section_presentation_team {
-    @include flex-container($direction: $flex_direction_column,
-        $justify: $justify_content_center,
-        $align: $align_items_center);
+  
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
@@ -1240,7 +1246,7 @@ header {
         $text_transform_capitalize,
         $letter_spacing_strong);
     margin: $spacing_20 $spacing_0;
-
+    text-align: $text_align_center;
     @include media-maxwidth($deskop_size) {
         margin: $spacing_0;
     }
@@ -1338,7 +1344,7 @@ header {
 .swiper-button-prev::after {
     color: $neutral_white;
 
-    @include media-maxwidth($smartphone_size) {
+    @include media-maxwidth($deskop_size) {
         display: $display_none;
     }
 }
@@ -1354,9 +1360,12 @@ header {
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_3.jpg");
-    margin: $spacing_30 $spacing_0;
+    margin: $spacing_30 $spacing_0;  
+    padding: 40px 0;
 
     @include media-maxwidth($deskop_size) {
+        padding: $spacing_0;
+        margin: $spacing_0;
         min-height: 0;
     }
 }
@@ -1366,6 +1375,7 @@ header {
     position: $position_relative;
     width: 700px;
     overflow: $overflow_hidden;
+    margin-top: $spacing_40;
     mask-image: linear-gradient(90deg,
             $transparent,
             $neutral_white,
