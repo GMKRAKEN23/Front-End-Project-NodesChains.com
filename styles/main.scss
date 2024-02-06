@@ -7,6 +7,7 @@
 // mixins
 @import 'mixins';
 
+/* btn_reactive_additionnal_information */
 .reactive_additional_information_section_btn {
     cursor: $cursor_pointer;
     position: $position_fixed;
@@ -32,7 +33,9 @@
         transform: rotate(360deg);
     }
 }
+/* btn_reactive_additionnal_information_end */
 
+/* section_reactive_information */ 
 .reactive_additional_information_section {
     position: $position_fixed;
     top: 2%;
@@ -104,7 +107,9 @@
         }
     }
 }
+/* section_reactive_information_end */ 
 
+/* body */ 
 body {
     @include dimensions($width: 100%, $height: auto);
     background: #04060a;
@@ -112,9 +117,9 @@ body {
     font-family: Helvetica;
     overflow-x: $overflow_hidden;
 }
+/* body_end */ 
 
 /* header */
-
 header {
     @include media-minwidth($smartphone_size) {
         margin: $spacing_0 $spacing_20;
@@ -228,7 +233,6 @@ header {
 }
 
 /* Animation rotate logo */
-
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -246,7 +250,6 @@ header {
         transform: rotate(0deg);
     }
 }
-
 /* Animation_rotate_logo */
 
 /* burger_menu */
@@ -389,7 +392,6 @@ header {
         transform: rotate(-45deg);
     }
 }
-
 /* nav_bar_dropdown_end */
 
 /* header_end */
@@ -536,7 +538,7 @@ header {
         min-height: 0;
     }
 
-    min-height: 80vh;
+    min-height: 70vh;
     width: 100%;
 }
 
@@ -696,7 +698,7 @@ header {
         $background_repeat);
     background-image: url("/asset/connection_3.jpg");
 
-    @include media-maxwidth($smartphone_size_530) {
+    @include media-maxwidth($tablet_size) {
         display: none;
     }
 
@@ -728,7 +730,7 @@ header {
     padding: $spacing_20;
 
     @include media-maxwidth($deskop_size) {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 
@@ -754,7 +756,8 @@ header {
 
         @include media-maxwidth($deskop_size) {
             flex-direction: $flex-direction_row;
-            flex-wrap: wrap;
+            flex-wrap: $flex_wrap;
+            justify-content: $justify_content_center;
         }
 
         .section_most_traded_cryptocurrencies_container_legend_item {
@@ -1133,6 +1136,8 @@ header {
 
             .section_service_swicth_container_article_image {
                 border-top-left-radius: $border_radius_10;
+                border-top-right-radius: $border_radius_10;
+                border-bottom-left-radius: $border_radius_10;
                 z-index: -1;
 
                 @include media-maxwidth($smartphone_size) {
@@ -1233,7 +1238,7 @@ header {
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_3.jpg");
-    min-height: 100vh;
+    margin: 30px 0;
 
     @include media-maxwidth($deskop_size) {
         min-height: 0;
@@ -1253,6 +1258,7 @@ header {
 
     @include media-maxwidth($tablet_size) {
         width: 80%;
+        margin: 30px 0;
     }
 }
 
@@ -1358,21 +1364,17 @@ header {
         }
     }
 }
-
 /* section_crypto_list_end */
 
 /* section_presentation_team */
-
 .section_presentation_team {
     @include flex-container($direction: $flex_direction_column,
         $justify: $justify_content_center,
         $align: $align_items_center);
-    min-height: 70vh;
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_4.jpg");
-    min-height: 100vh;
 
     @include media-maxwidth($deskop_size) {
         min-height: 0;
@@ -1461,7 +1463,7 @@ header {
             padding: 7px 14px;
             background: $primary-color-light-cyan;
             border-radius: 10px;
-            color: white;
+            color: $neutral_white;
             transition: 0.3s;
 
             &:hover {
@@ -1485,11 +1487,9 @@ header {
         display: $display_none;
     }
 }
-
 /* section_presentation_team_end */
 
 /* line */
-
 .line {
     background: linear-gradient(270deg,
             $strong_black,
@@ -1507,15 +1507,14 @@ header {
     opacity: 1;
     border-radius: $border_radius_30;
     border: 0;
-    @include media-maxwidth($smartphone_size) {
-        margin: 40px;
+    margin: $spacing_30;
+    @include media-maxwidth($tablet_size) {
+        margin: $spacing_40;
     }
 }
-
 /* line_end */
 
 /* footer */
-
 .footer {
     @include flex-container($direction: $flex_direction_column,
         $justify: $justify_content_space_between,
@@ -1524,7 +1523,7 @@ header {
     padding: $spacing_0 5%;
     margin: $spacing_0 $auto;
 
-    @include media-maxwidth($smartphone_size) {
+    @include media-maxwidth($tablet_size) {
         margin: 0;
         display: block;
     }
@@ -1536,7 +1535,7 @@ header {
     margin: $spacing_25 $auto;
     height: 350px;
 
-    @include media-maxwidth($smartphone_size) {
+    @include media-maxwidth($tablet_size) {
         display: $display_block
     }
 }
@@ -1547,8 +1546,8 @@ header {
     margin: $spacing_0 $auto;
     width: 300px;
 
-    @include media-maxwidth($smartphone_size) {
-        margin: $spacing_25;
+    @include media-maxwidth($tablet_size) {
+        margin: $spacing_25 $auto;
     }
 
     .footer_container_figure_link {
@@ -1624,11 +1623,10 @@ header {
     display: $display_flex;
     margin: $spacing_0 $auto;
 
-    @include media-maxwidth($smartphone_size) {
+    @include media-maxwidth($tablet_size) {
         margin: $spacing_20 $auto;
         flex-wrap: $flex_wrap;
     }
-
 }
 
 .footer_container_company_nav_bar {
@@ -1639,7 +1637,7 @@ header {
         display: $display_flex;
         margin: $spacing_20 $auto;
 
-        @include media-maxwidth($smartphone_size) {
+        @include media-maxwidth($tablet_size) {
             display: $display_block;
         }
 
@@ -1647,8 +1645,9 @@ header {
             display: $display_flex;
             margin: $spacing_0 $spacing_20;
             font-size: $font_size_1_2;
+            text-align: center;
 
-            @include media-maxwidth($smartphone_size) {
+            @include media-maxwidth($tablet_size) {
                 display: $display_block;
                 text-align: $text_align_center;
                 margin-top: $spacing_20;
@@ -1660,6 +1659,7 @@ header {
                     $neutral_white,
                     $text_transform_none,
                     $letter_spacing_medium);
+                    line-height: 1.2;
 
                 &:hover {
                     color: $primary_color_light_cyan;

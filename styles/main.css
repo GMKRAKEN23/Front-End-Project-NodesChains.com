@@ -48,6 +48,7 @@ table {
   border-spacing: 0;
 }
 
+/* btn_reactive_additionnal_information */
 .reactive_additional_information_section_btn {
   cursor: pointer;
   position: fixed;
@@ -72,6 +73,8 @@ table {
     transform: rotate(360deg);
   }
 }
+/* btn_reactive_additionnal_information_end */
+/* section_reactive_information */
 .reactive_additional_information_section {
   position: fixed;
   top: 2%;
@@ -131,6 +134,8 @@ table {
   box-shadow: inset 1.21px 1.59px 2.8px -0.35px rgba(0, 0, 0, 0.15), inset -1.82px -2.39px 2.8px -0.35px rgba(0, 0, 0, 0.3), 3.63px 4.77px 2.1px -1.05px rgba(0, 0, 0, 0.6);
 }
 
+/* section_reactive_information_end */
+/* body */
 body {
   width: 100%;
   height: auto;
@@ -140,6 +145,7 @@ body {
   overflow-x: hidden;
 }
 
+/* body_end */
 /* header */
 header {
   display: flex;
@@ -548,7 +554,7 @@ header .active:hover {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 80vh;
+  min-height: 70vh;
   width: 100%;
 }
 @media (max-width: 1024px) {
@@ -717,7 +723,7 @@ header .active:hover {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 530px) {
+@media (max-width: 779px) {
   .section_most_traded_cryptocurrencies {
     display: none;
   }
@@ -749,7 +755,7 @@ header .active:hover {
 }
 @media (max-width: 1024px) {
   .section_most_traded_cryptocurrencies_container {
-    width: 80%;
+    width: 70%;
     height: auto;
   }
 }
@@ -776,6 +782,7 @@ header .active:hover {
   .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .section_most_traded_cryptocurrencies_container .section_most_traded_cryptocurrencies_container_legend_list .section_most_traded_cryptocurrencies_container_legend_item {
@@ -1138,6 +1145,8 @@ header .active:hover {
 }
 .section_service_company .section_service_swicth_container .section_service_swicth_container_article .section_service_swicth_container_article_image {
   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   z-index: -1;
 }
 @media (max-width: 376px) {
@@ -1238,7 +1247,7 @@ header .active:hover {
   background-position: center;
   background-repeat: repeat;
   background-image: url("/asset/connection_3.jpg");
-  min-height: 100vh;
+  margin: 30px 0;
 }
 @media (max-width: 1024px) {
   .section_crypto_list {
@@ -1261,6 +1270,7 @@ header .active:hover {
 @media (max-width: 779px) {
   .section_crypto_list .section_crypto_list_scroll {
     width: 80%;
+    margin: 30px 0;
   }
 }
 
@@ -1371,12 +1381,10 @@ header .active:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
   background-image: url("/asset/connection_4.jpg");
-  min-height: 100vh;
 }
 @media (max-width: 1024px) {
   .section_presentation_team {
@@ -1461,7 +1469,7 @@ header .active:hover {
   padding: 7px 14px;
   background: #1786F9;
   border-radius: 10px;
-  color: white;
+  color: #fbfafa;
   transition: 0.3s;
 }
 .card .card_container a:hover {
@@ -1493,8 +1501,9 @@ header .active:hover {
   opacity: 1;
   border-radius: 30px;
   border: 0;
+  margin: 30px;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .line {
     margin: 40px;
   }
@@ -1512,7 +1521,7 @@ header .active:hover {
   padding: 0px 5%;
   margin: 0px auto;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .footer {
     margin: 0;
     display: block;
@@ -1528,7 +1537,7 @@ header .active:hover {
   margin: 25px auto;
   height: 350px;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .footer_container {
     display: block;
   }
@@ -1540,9 +1549,9 @@ header .active:hover {
   margin: 0px auto;
   width: 300px;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .footer_container_figure {
-    margin: 25px;
+    margin: 25px auto;
   }
 }
 .footer_container_figure .footer_container_figure_link {
@@ -1623,7 +1632,7 @@ header .active:hover {
   display: flex;
   margin: 0px auto;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .footer_container_media {
     margin: 20px auto;
     flex-wrap: wrap;
@@ -1638,7 +1647,7 @@ header .active:hover {
   display: flex;
   margin: 20px auto;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .footer_container_company_nav_bar .footer_container_company_nav_bar_list {
     display: block;
   }
@@ -1647,8 +1656,9 @@ header .active:hover {
   display: flex;
   margin: 0px 20px;
   font-size: 1.2rem;
+  text-align: center;
 }
-@media (max-width: 376px) {
+@media (max-width: 779px) {
   .footer_container_company_nav_bar .footer_container_company_nav_bar_list .footer_container_company_nav_bar_list_items {
     display: block;
     text-align: center;
@@ -1661,6 +1671,7 @@ header .active:hover {
   color: #fbfafa;
   text-transform: none;
   letter-spacing: 2px;
+  line-height: 1.2;
 }
 .footer_container_company_nav_bar .footer_container_company_nav_bar_list .footer_container_company_nav_bar_list_items .footer_container_company_nav_bar_list_items_link:hover {
   color: #1786F9;
