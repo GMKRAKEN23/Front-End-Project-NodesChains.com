@@ -5,9 +5,24 @@ function swiperCard(){
   let swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 10,
     grabCursor: true,
+  
+    // Responsive breakpoints
+    breakpoints: {
+      // When window width is <= 576px
+      576: {
+        slidesPerView: 1
+      },
+      // When window width is <= 768px
+      768: {
+        slidesPerView: 1
+      },
+      // When window width is <= 992px
+      992: {
+        slidesPerView: 3,
+      }
+    },
   
     // If we need pagination
     pagination: {
@@ -22,6 +37,7 @@ function swiperCard(){
     },
   });
 }
+
 
 // export the function swiperCard
 export {swiperCard};

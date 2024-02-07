@@ -1331,17 +1331,16 @@ header {
 
 /* section_presentation_team */
 .section_presentation_team {
-    padding: 20px 0;
+    width: 100%;
+    margin: $spacing_0 $auto;
+    padding: $spacing_20 $spacing_0;
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_4.jpg");
 
-    @include media-maxwidth($deskop_size) {
-        min-height: 0;
-        margin: $spacing_0 $auto;
-        text-align: $text_align_center;
-        width: 350px;
+    @include min-width-530-1024{
+        display: $display_none;
     }
 }
 
@@ -1355,25 +1354,25 @@ header {
     text-align: $text_align_center;
 
     @include media-maxwidth($deskop_size) {
-        margin: $spacing_0;
+        margin: $spacing_15;
     }
 }
 
 /* swiper */
 .swiper {
-    width: 1100px;
-    height: 400px;
-}
-
+    width: 80%;
+    margin: $spacing_0 $auto;
+  }
 /* swiper_end */
 
 /* card_team_swiper */
 .card {
     .card_container {
-        margin: $spacing_5;
+        margin: $spacing_5 $spacing_10;
         outline: $border_solid $border_width_3 $neutral_white;
         border-radius: $border_radius_20;
-        height: 380px;
+        height: 400px;
+        max-width: 400px;
         background: $strong_black;
 
         .container_image {
@@ -1440,21 +1439,12 @@ header {
 
 /* card_team_swiper */
 
-/* swiper_slide */
-.swiper-slide {
-    width: 320px;
-    height: 500px;
-    margin: $spacing_10 $spacing_0;
-}
-
-/* swiper_slide */
-
 /* swiper_slide_button */
 .swiper-button-next::after,
 .swiper-button-prev::after {
     color: $neutral_white;
 
-    @include media-maxwidth($deskop_size) {
+    @include media-maxwidth($smartphone_size_530) {
         display: $display_none;
     }
 }
@@ -1495,7 +1485,7 @@ header {
 
     @include media-maxwidth($tablet_size) {
         width: 80%;
-        margin: 30px 0;
+        margin: $spacing_30 $spacing_0;
     }
 }
 
@@ -1649,8 +1639,8 @@ header {
     margin: $spacing_0 $auto;
 
     @include media-maxwidth($tablet_size) {
-        margin: 0;
-        display: block;
+        margin:$spacing_0;
+        display: $display_block;
     }
 }
 
@@ -1831,15 +1821,13 @@ header {
 /* footer_media_link_end */
 /* footer_end */
 
-
 /* footer_pop_pup_container */
-
 .footer_pop_up_active{
-    display:  block;
+    display:  $display_block;
 }
 
 .footer_pop_up{
-    display: none;
+    display: $display_none;
 }
 /* footer_pop_up_container_end */ 
 
@@ -1891,6 +1879,7 @@ header {
     }
 }
 
+/* footer_pop_up_link */
 .footer_pop_up_newsletter_link {
     @include flex-container($direction: $flex-direction_row, 
     $justify: $justify_content_center,
@@ -1909,14 +1898,16 @@ header {
         color: $neutral_white;
     }
 }
+/* footer_pop_up_link_end */
 
+/* overlay */
 .overlay_acive {
-    display: block;
+    display: $display_block;
 }
 
 .overlay {
-    display: none;
-    position: fixed;
+    display: $display_none;
+    position: $position_fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1924,4 +1915,5 @@ header {
     background: rgba(0, 0, 0, 0.5); 
     z-index: 1; 
   }
+  /* overlay_end */
 /* pop_up_newsletter_end */

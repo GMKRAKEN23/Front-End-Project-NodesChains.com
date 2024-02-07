@@ -1340,18 +1340,17 @@ header .active:hover {
 /* section_most_traded_cryptocurrencies_end */
 /* section_presentation_team */
 .section_presentation_team {
-  padding: 20px 0;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0px;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
   background-image: url("/asset/connection_4.jpg");
 }
-@media (max-width: 1024px) {
+@media screen and (min-width: 530px) and (max-width: 1024px) {
   .section_presentation_team {
-    min-height: 0;
-    margin: 0px auto;
-    text-align: center;
-    width: 350px;
+    display: none;
   }
 }
 
@@ -1366,23 +1365,24 @@ header .active:hover {
 }
 @media (max-width: 1024px) {
   .section_presentation_team_title {
-    margin: 0px;
+    margin: 15px;
   }
 }
 
 /* swiper */
 .swiper {
-  width: 1100px;
-  height: 400px;
+  width: 80%;
+  margin: 0px auto;
 }
 
 /* swiper_end */
 /* card_team_swiper */
 .card .card_container {
-  margin: 5px;
+  margin: 5px 10px;
   outline: solid 3px #fbfafa;
   border-radius: 20px;
-  height: 380px;
+  height: 400px;
+  max-width: 400px;
   background: #1e1c1c;
 }
 .card .card_container .container_image {
@@ -1441,20 +1441,12 @@ header .active:hover {
 }
 
 /* card_team_swiper */
-/* swiper_slide */
-.swiper-slide {
-  width: 320px;
-  height: 500px;
-  margin: 10px 0px;
-}
-
-/* swiper_slide */
 /* swiper_slide_button */
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #fbfafa;
 }
-@media (max-width: 1024px) {
+@media (max-width: 530px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
@@ -1501,7 +1493,7 @@ header .active:hover {
 @media (max-width: 779px) {
   .section_crypto_list .section_crypto_list_scroll {
     width: 80%;
-    margin: 30px 0;
+    margin: 30px 0px;
   }
 }
 
@@ -1640,7 +1632,7 @@ header .active:hover {
 }
 @media (max-width: 779px) {
   .footer {
-    margin: 0;
+    margin: 0px;
     display: block;
   }
 }
@@ -1888,6 +1880,7 @@ header .active:hover {
   font-weight: 900;
 }
 
+/* footer_pop_up_link */
 .footer_pop_up_newsletter_link {
   display: flex;
   flex-direction: row;
@@ -1908,6 +1901,8 @@ header .active:hover {
   color: #fbfafa;
 }
 
+/* footer_pop_up_link_end */
+/* overlay */
 .overlay_acive {
   display: block;
 }
@@ -1923,4 +1918,5 @@ header .active:hover {
   z-index: 1;
 }
 
+/* overlay_end */
 /* pop_up_newsletter_end *//*# sourceMappingURL=main.css.map */

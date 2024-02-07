@@ -38,7 +38,7 @@
 }
 
 // mixin border
-@mixin border-properties($border_style: $border_solid, $border_width: $border, $border_color: black, $radius:$border_radius_none) {
+@mixin border-properties($border_style: $border_solid, $border_width: $border, $border_color: black, $radius: $border_radius_none) {
     border-radius: $radius;
     border: $border-width $border_style $border-color;
 }
@@ -53,6 +53,12 @@
 // mixin min-width
 @mixin media-minwidth($screensize) {
     @media (min-width: $screensize) {
+        @content;
+    }
+}
+
+@mixin min-width-530-1024 {
+    @media screen and (min-width: $smartphone_size_530) and (max-width: $deskop_size) {
         @content;
     }
 }
