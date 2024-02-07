@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 </head>
 
-<body>
+<body onload="showLoader()">
     <!-- loader -->
     <div id="container_loader">
         <div class="container_loader_circle">
@@ -460,7 +460,9 @@
                         <!-- section_presentation_team_container_swiper_article_card_container_description_end -->
                         <!-- section_presentation_team_container_swiper_article_card_container_description_container_btn -->
                         <div class="container_btn">
-                            <a href="#">view more</a>
+                            <a href="#"
+                                class="section_presentation_team_container_swiper_article_container_description_contioner_btn_link">view
+                                more</a>
                         </div>
                         <!-- section_presentation_team_container_swiper_article_card_container_description_container_btn_end -->
                     </div>
@@ -489,7 +491,9 @@
                         <!-- section_presentation_team_container_swiper_article_card_container_description_end -->
                         <!-- section_presentation_team_container_swiper_article_card_container_description_container_btn -->
                         <div class="container_btn">
-                            <a href="#">view more</a>
+                            <a href="#"
+                                class="section_presentation_team_container_swiper_article_container_description_contioner_btn_link">view
+                                more</a>
                         </div>
                         <!-- section_presentation_team_container_swiper_article_card_container_description_container_btn_end -->
                     </div>
@@ -630,8 +634,8 @@
             <!-- footer_newsletter -->
             <div class="footer_container_info">
                 <div class="footer_container_info_newsletter">
-                    <input type="text" id="info_newsletter" placeholder="Subscribe to our newsletter"
-                        class="footer_container_info_newsletter_input">
+                    <input type="email" id="info_newsletter" placeholder="Subscribe to our newsletter"
+                        class="footer_container_info_newsletter_input" name="newsletter">
                     <i class='bx bx-right-arrow-alt'></i>
                 </div>
             </div>
@@ -689,16 +693,37 @@
             </ul>
             <!-- footer_media_end -->
         </div>
-        <!-- footer_container_end -->s
+        <!-- footer_container_end -->
 
     </footer>
     <!-- section_footer_end -->
 
+    <!-- pop_pup_newsletter -->
+    <div class="footer_pop_up">
+        <div class="footer_pop_up_newsletter">
+
+            <div class="footer_pop_up_newsletter_check">
+                <i class='bx bx-check'></i>
+            </div>
+
+            <div class="footer_pop_up_newsletter_container">
+                <h2 class="footer_pop_up_newsletter_container_title">Thank you!</h2>
+                <p class="footer_pop_up_newsletter_container_description">You details has been successfully submited.</p>
+            </div>
+
+            <a href="#" class="footer_pop_up_newsletter_link">Ok</a>
+        </div>
+        <!-- overlay -->
+        <div class="overlay"></div>  
+        <!-- overlay_end -->
+    </div>
+    <!-- pop_pup_newsletter_end -->
+
     <!-- script -->
-    <script type="module" src="js/script.js"></script>
-    <script type="text/javascript"
-        src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+    <script type="module" src="js/script.js"></script>    
+    <script type="text/javascript" src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+
     <!-- script_end -->
 </body>
 

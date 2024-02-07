@@ -9,9 +9,9 @@
 
 /* Loader */
 #container_loader {
-    @include flex-container($direction: $flex-direction_row, 
-    $justify: $justify_content_center, 
-    $align: $align_items_center);
+    @include flex-container($direction: $flex-direction_row,
+        $justify: $justify_content_center,
+        $align: $align_items_center);
     position: $position_fixed;
     top: 50%;
     left: 50%;
@@ -22,9 +22,9 @@
     z-index: 100;
 
     .container_loader_circle {
-        @include flex-container($direction: $flex-direction_row, 
-        $justify: $justify_content_center, 
-        $align: $align_items_center);
+        @include flex-container($direction: $flex-direction_row,
+            $justify: $justify_content_center,
+            $align: $align_items_center);
         @include dimensions($width: $spacing_30, $height: $spacing_30);
         border-radius: 50%;
         margin: $spacing_10;
@@ -60,33 +60,39 @@
 }
 
 /* animation_keyframes_scale_loader */
-@keyframes loadermove{
-    0%{
+@keyframes loadermove {
+    0% {
         box-shadow: 0 0 10px $primary-color-light-cyan;
     }
-    50%{
+
+    50% {
         box-shadow: 0 10px 20px $primary-color-light-cyan;
         transform: scale(1);
     }
-    100%{
-        
+
+    100% {
+
         box-shadow: 0 0 30px $primary-color-light-cyan;
     }
 }
+
 /* animation_keyframes_scale_loader_end */
 
 /* animation_keyframes_scale_dot */
-@keyframes loaderscale{
-    0%{
+@keyframes loaderscale {
+    0% {
         transform: scale(0);
     }
-    50%{
+
+    50% {
         transform: scale(1.3);
     }
-    100%{
+
+    100% {
         transform: scale(0);
     }
 }
+
 /* animation_keyframes_scale_dot_end 
 /* loader_end */
 
@@ -116,9 +122,10 @@
         transform: rotate(360deg);
     }
 }
+
 /* btn_reactive_additionnal_information_end */
 
-/* section_reactive_information */ 
+/* section_reactive_information */
 .reactive_additional_information_section {
     position: $position_fixed;
     top: 2%;
@@ -190,9 +197,10 @@
         }
     }
 }
-/* section_reactive_information_end */ 
 
-/* body */ 
+/* section_reactive_information_end */
+
+/* body */
 body {
     @include dimensions($width: 100%, $height: auto);
     background: #04060a;
@@ -200,7 +208,8 @@ body {
     font-family: Helvetica;
     overflow-x: $overflow_hidden;
 }
-/* body_end */ 
+
+/* body_end */
 
 /* header */
 header {
@@ -242,6 +251,7 @@ header {
         @include text-gradient(linear-gradient(35deg, $primary_color_bright_light_cyan, $primary_color_light_cyan), text, transparent);
         margin-left: $spacing_10;
     }
+
     /* header_logo_end */
 
     .header_nav_bar_link {
@@ -335,6 +345,7 @@ header {
         transform: rotate(0deg);
     }
 }
+
 /* Animation_rotate_logo */
 
 /* burger_menu */
@@ -370,6 +381,7 @@ header {
         }
     }
 }
+
 /* burger_menu_end */
 
 /* nav_bar_dropdown */
@@ -475,11 +487,12 @@ header {
         transform: rotate(-45deg);
     }
 }
+
 /* nav_bar_dropdown_end */
 
 /* header_end */
 
-/* section_presentation */ 
+/* section_presentation */
 .section_presentation {
     @include media-minwidth($smartphone_size) {
         margin-top: $spacing_30;
@@ -594,6 +607,7 @@ header {
         box-shadow: 0 0 10px $primary_color_bright_light_cyan;
     }
 }
+
 /* section_exchange_presentation_end */
 
 /* section_buy_crypto */
@@ -610,7 +624,7 @@ header {
     }
 }
 
-.section_buy_crypto_container {    
+.section_buy_crypto_container {
     width: 100%;
     min-height: 80vh;
     margin: 40px 0;
@@ -764,6 +778,7 @@ header {
         font-size: $font_size_1_5;
     }
 }
+
 /* section_buy_crypto card_bank_end */
 
 /* section_buy_crypto_end */
@@ -849,10 +864,10 @@ header {
 
     .section_promotion_nft_container_promotion_link {
         width: 30%;
-        @include border-properties($border_style: $border_solid, 
-        $border_width: $border_width_1, 
-        $border_color: $primary-color-light-cyan, 
-        $radius:$border_radius_10);
+        @include border-properties($border_style: $border_solid,
+            $border_width: $border_width_1,
+            $border_color: $primary-color-light-cyan,
+            $radius: $border_radius_10);
         background: $transparent;
         text-align: $text_align_center;
         color: $neutral_white;
@@ -872,6 +887,7 @@ header {
 /* container_timer */
 .section_promotion_nft_container_promotion_timer {
     margin: $spacing_20 $auto;
+
     @include media-maxwidth($deskop_size) {
         margin: $spacing_20 $auto;
     }
@@ -901,8 +917,8 @@ header {
                 $letter_spacing_medium);
 
             @include flex-container($direction: $flex-direction_row,
-                $justify: $justify_content_center, 
-                $align: $align_items_center); 
+                $justify: $justify_content_center,
+                $align: $align_items_center);
 
             &:nth-child(1) {
                 background: $primary_color_bright_light_cyan;
@@ -910,7 +926,7 @@ header {
             }
 
             &:nth-child(2) {
-                background:$primary_color_pink;
+                background: $primary_color_pink;
                 box-shadow: 0 0 10px $primary_color_pink;
             }
 
@@ -928,10 +944,10 @@ header {
 }
 
 .section_promotion_nft_container_card_nft {
-    @include border-properties($border_style: $border_solid, 
-    $border_width: $border_width_4, 
-    $border_color: $neutral_white, 
-    $radius:$border_radius_15);
+    @include border-properties($border_style: $border_solid,
+        $border_width: $border_width_4,
+        $border_color: $neutral_white,
+        $radius: $border_radius_15);
     animation: move 3s linear infinite;
 
     @include media-maxwidth($deskop_size) {
@@ -980,6 +996,7 @@ header {
         transform: translateY(0px);
     }
 }
+
 /* container_timer_end */
 /* section_section_promotion_nft */
 
@@ -989,9 +1006,9 @@ header {
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_4.jpg");
-    @include flex-container($direction: $flex-direction_column, 
-    $justify: $justify_content_center, 
-    $align:$align_items_center);
+    @include flex-container($direction: $flex-direction_column,
+        $justify: $justify_content_center,
+        $align: $align_items_center);
     width: 100%;
     min-height: 80vh;
 
@@ -1004,9 +1021,9 @@ header {
         width: 90%;
 
         .section_service_company_container_header {
-            @include flex-container($direction: $flex-direction_row, 
-            $justify: $justify_content_space_between, 
-            $align:$align_items_center);
+            @include flex-container($direction: $flex-direction_row,
+                $justify: $justify_content_space_between,
+                $align: $align_items_center);
 
             .section_service_company_container_header_title {
                 @include text-custom($font_size_2,
@@ -1088,6 +1105,7 @@ header {
 
     }
 
+    /* switch container */
     .section_service_swicth_container {
         display: $display_flex;
         justify-content: $justify_content_center;
@@ -1098,13 +1116,14 @@ header {
             @include media-minwidth($deskop_size) {
                 min-width: 1000px;
             }
+
             width: 1100px;
             height: 400px;
             display: $display_flex;
-            @include border-properties($border_style: $border_solid, 
-            $border_width: $border_width_1, 
-            $border_color: $neutral_white, 
-            $radius:$border_radius_10);
+            @include border-properties($border_style: $border_solid,
+                $border_width: $border_width_1,
+                $border_color: $neutral_white,
+                $radius: $border_radius_10);
             box-shadow: 0 0 20px $neutral_white;
             background: $strong_black;
             z-index: 1;
@@ -1214,7 +1233,10 @@ header {
             }
         }
     }
+
+    /* switch container_end */
 }
+
 /* section_service_company_end */
 
 /* section_most_traded_cryptocurrencies */
@@ -1304,11 +1326,12 @@ header {
         }
     }
 }
+
 /* section_most_traded_cryptocurrencies_end */
 
 /* section_presentation_team */
 .section_presentation_team {
-  
+    padding: 20px 0;
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
@@ -1330,6 +1353,7 @@ header {
         $letter_spacing_strong);
     margin: $spacing_20 $spacing_0;
     text-align: $text_align_center;
+
     @include media-maxwidth($deskop_size) {
         margin: $spacing_0;
     }
@@ -1340,14 +1364,15 @@ header {
     width: 1100px;
     height: 400px;
 }
+
 /* swiper_end */
 
 /* card_team_swiper */
 .card {
     .card_container {
-        margin: 5px;
-        outline: solid 3px $neutral_white;
-        border-radius: 20px;
+        margin: $spacing_5;
+        outline: $border_solid $border_width_3 $neutral_white;
+        border-radius: $border_radius_20;
         height: 380px;
         background: $strong_black;
 
@@ -1357,16 +1382,16 @@ header {
                 $align: $align_items_center);
             height: 170px;
             background: $primary-color-light-cyan;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            border-top-left-radius: $border_radius_20;
+            border-top-right-radius: $border_radius_20;
         }
 
         .container_description {
-            padding: 10px 20px;
+            padding: $spacing_15 $spacing_20;
             height: 150px;
         }
 
-        h2 {
+        .section_presentation_team_container_swiper_article_container_description_title {
             @include text-custom($font_size_1,
                 $font_weight_medium,
                 $neutral_white,
@@ -1376,7 +1401,7 @@ header {
             padding: $spacing_10 $spacing_0;
         }
 
-        h3 {
+        .section_presentation_team_container_swiper_article_container_description_subtitle {
             @include text-custom($font_size_1,
                 $font_weight_medium,
                 $primary-color-light-cyan,
@@ -1385,7 +1410,7 @@ header {
             text-align: $text_align_center;
         }
 
-        p {
+        .section_presentation_team_container_swiper_article_container_description_paragraph {
             text-align: $text_align_center;
             letter-spacing: $letter_spacing_light;
             line-height: $line_height_1_2;
@@ -1399,7 +1424,7 @@ header {
             margin: $spacing_0 $auto;
         }
 
-        a {
+        .section_presentation_team_container_swiper_article_container_description_contioner_btn_link {
             padding: 7px 14px;
             background: $primary-color-light-cyan;
             border-radius: $border_radius_10;
@@ -1412,6 +1437,7 @@ header {
         }
     }
 }
+
 /* card_team_swiper */
 
 /* swiper_slide */
@@ -1420,6 +1446,7 @@ header {
     height: 500px;
     margin: $spacing_10 $spacing_0;
 }
+
 /* swiper_slide */
 
 /* swiper_slide_button */
@@ -1431,6 +1458,7 @@ header {
         display: $display_none;
     }
 }
+
 /* swiper_slide_button_end */
 /* section_presentation_team_end */
 
@@ -1443,8 +1471,8 @@ header {
         $background_position_center,
         $background_repeat);
     background-image: url("/asset/connection_3.jpg");
-    margin: $spacing_30 $spacing_0;  
-    padding: 40px 0;
+    margin: $spacing_30 $spacing_0;
+    padding: $spacing_40 $spacing_0;
 
     @include media-maxwidth($deskop_size) {
         padding: $spacing_0;
@@ -1471,6 +1499,7 @@ header {
     }
 }
 
+// line animate crypto animation
 .section_crypto_list_scroll .section_crypto_list_scroll_line {
     white-space: nowrap;
     animation: animate var(--t) linear infinite;
@@ -1481,6 +1510,8 @@ header {
     animation: animate2 var(--t) linear infinite;
     animation-delay: calc(var(--t) / -2);
 }
+
+// line animate crypto animation_end
 
 .section_crypto_list_scroll .section_crypto_list_scroll_line span {
     display: $display_inline_flex;
@@ -1535,6 +1566,11 @@ header {
         margin: $spacing_40 $spacing_0;
     }
 
+    @include media-maxwidth($tablet_size) {
+        flex-basis: calc(40% - 20px);
+        max-width: 550px
+    }
+
     .section_crypto_list_card {
         @include flex-container($flex_direction_column,
             $justify_content_center,
@@ -1573,6 +1609,7 @@ header {
         }
     }
 }
+
 /* section_crypto_list_end */
 
 /* line */
@@ -1594,10 +1631,12 @@ header {
     border-radius: $border_radius_30;
     border: 0;
     margin: $spacing_30;
+
     @include media-maxwidth($tablet_size) {
         margin: $spacing_40;
     }
 }
+
 /* line_end */
 
 /* footer */
@@ -1696,6 +1735,7 @@ header {
             color: $secondary_color_gray;
             font-size: $font_size_1_2;
             position: $position_relative;
+            cursor: $cursor_pointer;
             right: 30px;
 
             @include media-maxwidth($smartphone_size) {
@@ -1704,17 +1744,6 @@ header {
         }
     }
 }
-/* footer_container_media */
-.footer_container_media {
-    display: $display_flex;
-    margin: $spacing_0 $auto;
-
-    @include media-maxwidth($tablet_size) {
-        margin: $spacing_20 $auto;
-        flex-wrap: $flex_wrap;
-    }
-}
-/* footer_container_media_end */
 
 .footer_container_company_nav_bar {
     display: $display_flex;
@@ -1734,6 +1763,7 @@ header {
             font-size: $font_size_1_2;
             text-align: $text_align_center;
 
+
             @include media-maxwidth($tablet_size) {
                 display: $display_block;
                 text-align: $text_align_center;
@@ -1746,7 +1776,7 @@ header {
                     $neutral_white,
                     $text_transform_none,
                     $letter_spacing_medium);
-                    line-height: $line_height_1_2;
+                line-height: $line_height_1_2;
 
                 &:hover {
                     color: $primary_color_light_cyan;
@@ -1754,6 +1784,25 @@ header {
             }
         }
     }
+}
+
+/* footer_container_media */
+.footer_container_media {
+    display: $display_flex;
+    margin: $spacing_0 $auto;
+
+    @include media-maxwidth($tablet_size) {
+        margin: $spacing_20 $auto;
+        flex-wrap: $flex_wrap;
+        justify-content: $justify_content_center;
+    }
+}
+
+/* footer_container_media_end */
+
+.footer_container_media li {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
 }
 
 /* footer_media_link */
@@ -1778,5 +1827,101 @@ header {
         }
     }
 }
+
 /* footer_media_link_end */
 /* footer_end */
+
+
+/* footer_pop_pup_container */
+
+.footer_pop_up_active{
+    display:  block;
+}
+
+.footer_pop_up{
+    display: none;
+}
+/* footer_pop_up_container_end */ 
+
+/* pop_up_newsletter */
+.footer_pop_up_newsletter {
+    @include flex-container($direction: $flex-direction_column, 
+    $justify: $justify_content_space_around, 
+    $align: $align_items_center);
+
+    position: $position_fixed;
+    @include border-properties($border_style: $border_solid,
+        $border_width: $border_width_1,
+        $border_color: $neutral_white,
+        $radius: $border_radius_20);
+    background: $primary_color_bright_blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+    height: 300px;
+    z-index: 7000;
+}
+
+.footer_pop_up_newsletter_check{
+    border-radius: 50%;
+    padding: $spacing_20;
+    background: $neutral_white;
+    font-size: $font_size_1_5;
+}
+
+.footer_pop_up_newsletter_container {
+    @include flex-container($direction: $flex-direction_column, 
+    $justify: $justify_content_center,
+    $align: $align_items_center);
+    margin: $spacing_0 $auto;
+    text-align: $text_align_center;
+    color: $neutral_white;
+    font-weight: $font_weight_normal;
+    line-height: $line_height_1_4;
+    .footer_pop_up_newsletter_container_description{
+        letter-spacing: $letter_spacing_light;
+        padding: $spacing_5 $spacing_0;
+    }
+    .footer_pop_up_newsletter_container_title{
+        text-transform: $text-transform_capitalize;
+        letter-spacing: $letter_spacing_medium;
+        font-weight: $font_weight_strong;
+    }
+}
+
+.footer_pop_up_newsletter_link {
+    @include flex-container($direction: $flex-direction_row, 
+    $justify: $justify_content_center,
+    $align: $align_items_center);
+    width: 80%;
+    height: 35px;
+    background: $neutral_white;
+    border: $border_solid $border_width_1 $neutral_white;
+    border-radius: $border_radius_10;
+    color: $strong_black;
+    transition: 0.2s;
+    z-index: 100;
+
+    &:hover {
+        background: $strong_black;
+        color: $neutral_white;
+    }
+}
+
+.overlay_acive {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+/* pop_up_newsletter_end */

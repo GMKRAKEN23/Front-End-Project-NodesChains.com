@@ -31,5 +31,5 @@ function switchArticle() {
 }
 
 // export function switchArticle
-export { switchArticle }
+export { switchArticle };
 

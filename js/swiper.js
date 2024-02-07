@@ -21,7 +21,6 @@ function swiperCard(){
       prevEl: '.swiper-button-prev',
     },
   });
-
 }
 
 // export the function swiperCard
