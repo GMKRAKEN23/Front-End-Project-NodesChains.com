@@ -1,8 +1,8 @@
 # Front-End-Project-NodesChains.com
-Project NodesChains.com, a fictional cryptocurrency exchange platform
-![Uploading screenshot_nodeschains.com.png…]()
-
-Working Time: 
+## Project NodesChains.com, a fictional cryptocurrency exchange platform
+![screenshot_nodeschains com](https://github.com/GMKRAKEN23/Front-End-Project-NodesChains.com/assets/149949090/aad94e09-103d-4bb2-9569-8fe6624e654e)
+## Description 
+Working Time:    
 Project Group : No
 ## Technologies 
 1. HTML
