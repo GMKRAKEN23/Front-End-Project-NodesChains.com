@@ -1,6 +1,6 @@
 # Front-End-Project-NodesChains.com
 Project NodesChains.com, a fictional cryptocurrency exchange platform
-![screenshot of NodesChains.com](https://github.com/GMKRAKEN23/Front-End-Project-NodesChains.com/assets/149949090/1802c919-8048-439d-affd-84ed6da52003)
+![Uploading screenshot_nodeschains.com.png…]()
 
 Working Time: 
 Project Group : No
@@ -14,8 +14,8 @@ Project Group : No
 7. CANVA
 
 ## Concept 
-a) BEM Methodology 
-b) SEO  
+a) BEM Methodology     
+b) SEO    
 c) Responsive Design    
 d) Color Harmony  
 e) Animation  
