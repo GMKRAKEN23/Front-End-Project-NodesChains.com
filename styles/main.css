@@ -161,6 +161,9 @@ table {
 /* section_reactive_information */
 .reactive_additional_information_section {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   top: 2%;
   min-width: 300px;
   width: 20%;
@@ -1427,7 +1430,7 @@ header .active:hover {
 .card .card_container .container_btn {
   width: 200px;
   text-align: center;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 .card .card_container .section_presentation_team_container_swiper_article_container_description_contioner_btn_link {
   padding: 7px 14px;

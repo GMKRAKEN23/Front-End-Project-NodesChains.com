@@ -1,3 +1,4 @@
+// Function to check if an element is in the viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -8,6 +9,7 @@ function isElementInViewport(el) {
     );
 }
 
+// Function to show the chart if the element is in the viewport
 function showChartIfVisible() {
     let delayed = false;
     const chartContainer = document.getElementById('chart_crypto');
@@ -65,13 +67,14 @@ function showChartIfVisible() {
     }
 }
 
+// Function to initialize chart behavior
 function initialize() {
-
     window.addEventListener('scroll', showChartIfVisible);
     showChartIfVisible();
 }
 
+// Call the initialization function when the page is full loaded
 window.onload = initialize;
 
-
+// Export function isElementInViewport, showChartIfVisible, initialize 
 export { isElementInViewport, showChartIfVisible, initialize };

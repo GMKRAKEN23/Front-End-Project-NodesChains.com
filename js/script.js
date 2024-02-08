@@ -20,9 +20,9 @@ getChrono();
 switchArticle();
 // call function Loader
 timerHideLoader();
-
+// call function isElementInViewport
 isElementInViewport();
-
+// call function showChartIfVisible
 showChartIfVisible();
-
+// call function initialize for chart
 initialize();

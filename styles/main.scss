@@ -127,7 +127,10 @@
 
 /* section_reactive_information */
 .reactive_additional_information_section {
-    position: $position_fixed;
+    position: $position_fixed;    
+    display: $display_flex;
+    flex-direction: $flex-direction_column;
+    justify-content: $justify_content_space_around;
     top: 2%;
     min-width: calc(300px);
     width: 20%;
@@ -306,7 +309,7 @@ header {
 }
 
 .header_nav_bar_link {
-    position: relative;
+    position: $position_relative;
 
     &::after {
         @include dimensions($width: 100%, $height: 2px);
@@ -1339,7 +1342,7 @@ header {
         $background_repeat);
     background-image: url("/asset/connection_4.jpg");
 
-    @include min-width-530-1024{
+    @include min-width-530-1024 {
         display: $display_none;
     }
 }
@@ -1362,7 +1365,8 @@ header {
 .swiper {
     width: 80%;
     margin: $spacing_0 $auto;
-  }
+}
+
 /* swiper_end */
 
 /* card_team_swiper */
@@ -1420,7 +1424,7 @@ header {
         .container_btn {
             width: 200px;
             text-align: $text_align_center;
-            margin: $spacing_0 $auto;
+            margin: $spacing_10 $auto;
         }
 
         .section_presentation_team_container_swiper_article_container_description_contioner_btn_link {
@@ -1500,6 +1504,7 @@ header {
     animation: animate2 var(--t) linear infinite;
     animation-delay: calc(var(--t) / -2);
 }
+
 // line animate crypto animation_end
 
 .section_crypto_list_scroll .section_crypto_list_scroll_line span {
@@ -1638,7 +1643,7 @@ header {
     margin: $spacing_0 $auto;
 
     @include media-maxwidth($tablet_size) {
-        margin:$spacing_0;
+        margin: $spacing_0;
         display: $display_block;
     }
 }
@@ -1821,20 +1826,21 @@ header {
 /* footer_end */
 
 /* footer_pop_pup_container */
-.footer_pop_up_active{
-    display:  $display_block;
+.footer_pop_up_active {
+    display: $display_block;
 }
 
-.footer_pop_up{
+.footer_pop_up {
     display: $display_none;
 }
-/* footer_pop_up_container_end */ 
+
+/* footer_pop_up_container_end */
 
 /* pop_up_newsletter */
 .footer_pop_up_newsletter {
-    @include flex-container($direction: $flex-direction_column, 
-    $justify: $justify_content_space_around, 
-    $align: $align_items_center);
+    @include flex-container($direction: $flex-direction_column,
+        $justify: $justify_content_space_around,
+        $align: $align_items_center);
 
     position: $position_fixed;
     @include border-properties($border_style: $border_solid,
@@ -1851,7 +1857,7 @@ header {
     z-index: 7000;
 }
 
-.footer_pop_up_newsletter_check{
+.footer_pop_up_newsletter_check {
     border-radius: 50%;
     padding: $spacing_20;
     background: $neutral_white;
@@ -1859,19 +1865,21 @@ header {
 }
 
 .footer_pop_up_newsletter_container {
-    @include flex-container($direction: $flex-direction_column, 
-    $justify: $justify_content_center,
-    $align: $align_items_center);
+    @include flex-container($direction: $flex-direction_column,
+        $justify: $justify_content_center,
+        $align: $align_items_center);
     margin: $spacing_0 $auto;
     text-align: $text_align_center;
     color: $neutral_white;
     font-weight: $font_weight_normal;
     line-height: $line_height_1_4;
-    .footer_pop_up_newsletter_container_description{
+
+    .footer_pop_up_newsletter_container_description {
         letter-spacing: $letter_spacing_light;
         padding: $spacing_5 $spacing_0;
     }
-    .footer_pop_up_newsletter_container_title{
+
+    .footer_pop_up_newsletter_container_title {
         text-transform: $text-transform_capitalize;
         letter-spacing: $letter_spacing_medium;
         font-weight: $font_weight_strong;
@@ -1880,9 +1888,9 @@ header {
 
 /* footer_pop_up_link */
 .footer_pop_up_newsletter_link {
-    @include flex-container($direction: $flex-direction_row, 
-    $justify: $justify_content_center,
-    $align: $align_items_center);
+    @include flex-container($direction: $flex-direction_row,
+        $justify: $justify_content_center,
+        $align: $align_items_center);
     width: 80%;
     height: 35px;
     background: $neutral_white;
@@ -1897,6 +1905,7 @@ header {
         color: $neutral_white;
     }
 }
+
 /* footer_pop_up_link_end */
 
 /* overlay */
@@ -1911,8 +1920,9 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
-  }
-  /* overlay_end */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* overlay_end */
 /* pop_up_newsletter_end */
