@@ -4,6 +4,7 @@
 ## Description        
 Project Group : No  
 Type of Project : Personal
+Number of Page HTML : 1
 ## Technologies 
 1. HTML
 2. CSS
