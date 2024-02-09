@@ -451,7 +451,7 @@ header .active:hover {
   top: 0;
   left: 0;
   background: #1e1c1c;
-  z-index: 50;
+  z-index: 500;
 }
 #header_nav_bar_dropdown_scrolling_menu .header_nav_bar_dropdown_scrolling_menu_link {
   font-size: 1.2rem;
@@ -476,7 +476,7 @@ header .active:hover {
 
 .header_nav_bar_dropdodwn_scrolling_menu_header {
   width: auto;
-  height: 20%;
+  height: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -491,6 +491,8 @@ header .active:hover {
   height: 32px;
   position: relative;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .header_nav_bar_dropdown_burger_menu_header_cross:before, .header_nav_bar_dropdown_burger_menu_header_cross:after {
   width: 2px;
