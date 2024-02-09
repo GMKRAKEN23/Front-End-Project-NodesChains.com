@@ -164,11 +164,11 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  top: 2%;
+  top: 50%;
+  transform: translateY(-50%);
   min-width: 300px;
   width: 20%;
   right: -350px;
-  min-height: 95%;
   border-radius: 20px;
   background: #1786F9;
   box-shadow: 0 0 10px #1786F9;
@@ -180,7 +180,8 @@ table {
 .reactive_additional_information_section.active_section_reactive {
   right: 0px;
 }
-.reactive_additional_information_section .reactive_additional_information_section_title {
+
+.reactive_additional_information_section_title {
   font-size: 1.2rem;
   font-weight: 700;
   color: #fbfafa;
@@ -474,6 +475,7 @@ header .active:hover {
   background: #1786F9;
 }
 
+/* header_nav_scrolling_menu */
 .header_nav_bar_dropdodwn_scrolling_menu_header {
   width: auto;
   height: 10%;
@@ -486,6 +488,14 @@ header .active:hover {
   padding: 10px;
 }
 
+/* header_nav_scrolling_menu_end */
+/* header_logo_image_scrolling_menu */
+.header_logo_image {
+  animation: rotate 3s linear infinite;
+}
+
+/* header_logo_image_scrolling_menu_end */
+/* header_nav_bar_dropdown_burger_menu_header_cross */
 .header_nav_bar_dropdown_burger_menu_header_cross {
   width: 32px;
   height: 32px;
@@ -508,6 +518,7 @@ header .active:hover {
   transform: rotate(-45deg);
 }
 
+/* header_nav_bar_dropdown_burger_menu_header_cross_end */
 /* nav_bar_dropdown_end */
 /* header_end */
 /* section_presentation */
