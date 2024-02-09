@@ -4,8 +4,6 @@
 ## Description 
 Nodeschains.com is a fictitious mini cryptocurrency exchange project designed to provide an interactive and dynamic experience to users. This project showcases several key features to deliver an immersive experience:
 
-- Cryptocurrency Exchange: nodeschains.com offers a simulated cryptocurrency exchange where users can explore and trade various digital currencies.
-
 - Dynamic Elements: The site integrates several dynamic elements to enhance user interaction, including dropdown menus for smooth and intuitive navigation.
 
 - NFT Promotion: A dedicated section for promoting NFTs (Non-Fungible Tokens) is included to showcase the latest digital and artistic creations.
