@@ -7,7 +7,12 @@ import { btnReactSection } from "./displaySection.js";
 import { swiperCard } from "./swiper.js";
 import { hideLoader, showLoader, timerHideLoader} from "./loader.js";
 import { arrowInput, inputNewsLetter, displayPopUp, overlay, btnConfirm, validateEmail } from "./newsletter_pop_pup.js";
+import { burgerMenu, dropScrolling, dropScrollingMenu, headerCross, burgerMenutoggle, crossHeader } from "./header_dropdown_scrolling.js";
 
+// call function burgerMenutoggle 
+burgerMenutoggle();
+// call function crossHeader
+crossHeader();
 // call swipper call
 swiperCard();
 // call function btnReactSection
@@ -26,3 +31,4 @@ isElementInViewport();
 showChartIfVisible();
 // call function initialize for chart
 initialize();
+// call function toggleMenuNavBar 
