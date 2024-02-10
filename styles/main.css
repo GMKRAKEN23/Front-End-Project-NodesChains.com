@@ -531,7 +531,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("asset/connection.jpg");
+  background-image: url("../asset/connection.jpg");
   min-height: 100vh;
 }
 @media (min-width: 376px) {

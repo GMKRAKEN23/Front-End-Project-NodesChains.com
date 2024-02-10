@@ -525,7 +525,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_no_repeat);
-    background-image: url("asset/connection.jpg");
+    background-image: url("../asset/connection.jpg");
     min-height: 100vh;
 
     @include media-maxwidth($deskop_size) {
