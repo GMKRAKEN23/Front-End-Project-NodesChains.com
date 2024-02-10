@@ -1672,7 +1672,7 @@ header {
     }
 }
 
-.footer_container_figure {
+.footer_container_logo {
     display: $display_flex;
     justify-content: $justify_content_center;
     margin: $spacing_0 $auto;
@@ -1682,7 +1682,7 @@ header {
         margin: $spacing_25 $auto;
     }
 
-    .footer_container_figure_link {
+    .footer_container_logo_title {
         cursor: $cursor_pointer;
         @include flex-container($direction: $flex_direction_row,
             $justify: $justify_content_center,
@@ -1696,12 +1696,12 @@ header {
             $letter_spacing: $letter_spacing_strong);
     }
 
-    .footer_container_figure_link_figcaption {
+    .footer_container_logo_title {
         padding: $spacing_10;
 
     }
 
-    .footer_container_figure_link_image {
+    .footer_container_logo_image {
         animation: rotate 3s linear infinite;
     }
 }
