@@ -525,7 +525,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_no_repeat);
-    background-image: url("/asset/connection.jpg");
+    background-image: url("../asset/connection.jpg");
     min-height: 100vh;
 
     @include media-maxwidth($deskop_size) {
@@ -632,7 +632,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_2.jpg");
+    background-image: url("../asset/connection_2.jpg");
 
     @include media-maxwidth($deskop_size) {
         margin-top: 70px;
@@ -805,7 +805,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_3.jpg");
+    background-image: url("../asset/connection_3.jpg");
 
     .section_promotion_nft_container {
         @include flex-container($flex_direction_row,
@@ -1021,7 +1021,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_4.jpg");
+    background-image: url("../asset/connection_4.jpg");
     @include flex-container($direction: $flex-direction_column,
         $justify: $justify_content_center,
         $align: $align_items_center);
@@ -1262,7 +1262,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_3.jpg");
+    background-image: url("../asset/connection_3.jpg");
 
     @include media-maxwidth($tablet_size) {
         display: $display_none;
@@ -1353,7 +1353,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_4.jpg");
+    background-image: url("../asset/connection_4.jpg");
 
     @include min-width-530-1024 {
         display: $display_none;
@@ -1477,7 +1477,7 @@ header {
     @include background-properties($background_size_cover,
         $background_position_center,
         $background_repeat);
-    background-image: url("/asset/connection_3.jpg");
+    background-image: url("../asset/connection_3.jpg");
     margin: $spacing_30 $spacing_0;
     padding: $spacing_40 $spacing_0;
 
