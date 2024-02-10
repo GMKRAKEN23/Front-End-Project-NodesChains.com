@@ -1668,18 +1668,18 @@ header .active:hover {
   }
 }
 
-.footer_container_figure {
+.footer_container_logo {
   display: flex;
   justify-content: center;
   margin: 0px auto;
   width: 300px;
 }
 @media (max-width: 779px) {
-  .footer_container_figure {
+  .footer_container_logo {
     margin: 25px auto;
   }
 }
-.footer_container_figure .footer_container_figure_link {
+.footer_container_logo .footer_container_logo_title {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -1698,10 +1698,10 @@ header .active:hover {
   text-transform: none;
   letter-spacing: 3px;
 }
-.footer_container_figure .footer_container_figure_link_figcaption {
+.footer_container_logo .footer_container_logo_title {
   padding: 10px;
 }
-.footer_container_figure .footer_container_figure_link_image {
+.footer_container_logo .footer_container_logo_image {
   animation: rotate 3s linear infinite;
 }
 
