@@ -642,7 +642,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_2.jpg");
+  background-image: url("../asset/connection_2.jpg");
 }
 @media (max-width: 1024px) {
   .section_buy_crypto {
@@ -822,7 +822,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_3.jpg");
+  background-image: url("../asset/connection_3.jpg");
 }
 .section_promotion_nft .section_promotion_nft_container {
   display: flex;
@@ -1033,7 +1033,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_4.jpg");
+  background-image: url("../asset/connection_4.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1270,7 +1270,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_3.jpg");
+  background-image: url("../asset/connection_3.jpg");
   display: flex;
   flex-direction: column;
 }
@@ -1362,7 +1362,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_4.jpg");
+  background-image: url("../asset/connection_4.jpg");
 }
 @media screen and (min-width: 530px) and (max-width: 1024px) {
   .section_presentation_team {
@@ -1481,7 +1481,7 @@ header .active:hover {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-image: url("/asset/connection_3.jpg");
+  background-image: url("../asset/connection_3.jpg");
   margin: 30px 0px;
   padding: 40px 0px;
 }
