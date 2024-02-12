@@ -13,7 +13,7 @@ Nodeschains.com is a fictitious mini cryptocurrency exchange project designed to
 - Switch article : The platform features a switch of 4 articles in JS representing various domains related to blockchain, DeFi, AI, gaming, and NFTs.
   
 Project Group : No  
-Type of Project : Personal
+Type of Project : Personal  
 Number of Page HTML : 1
 ## Technologies 
 1. HTML
@@ -33,9 +33,9 @@ e) Animation
 f) Modules
 
 ## JavaScript Features
-- Loader
-- Dynamic section display
+- Loader  
 - Timer
+- Dynamic section display
 - Switch Article
 - Chart in JavaScript
 - Swiper in JavaScript
