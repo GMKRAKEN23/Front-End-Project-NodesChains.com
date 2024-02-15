@@ -1802,14 +1802,9 @@ header {
         margin: $spacing_20 $auto;
         flex-wrap: $flex_wrap;
         justify-content: $justify_content_center;
+        flex-basis: calc(25% - 0px);
+        margin-bottom: 20px;
     }
-}
-
-/* footer_container_media_end */
-
-.footer_container_media li {
-    flex-basis: calc(25% - 20px);
-    margin-bottom: 20px;
 }
 
 /* footer_media_link */

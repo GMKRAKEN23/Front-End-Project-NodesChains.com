@@ -1802,13 +1802,9 @@ header .active:hover {
     margin: 20px auto;
     flex-wrap: wrap;
     justify-content: center;
+    flex-basis: calc(25% - 0px);
+    margin-bottom: 20px;
   }
-}
-
-/* footer_container_media_end */
-.footer_container_media li {
-  flex-basis: calc(25% - 20px);
-  margin-bottom: 20px;
 }
 
 /* footer_media_link */
