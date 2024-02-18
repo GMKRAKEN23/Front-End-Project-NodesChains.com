@@ -35,7 +35,7 @@ f) Modules
 ## JavaScript Features
 - Loader  
 - Timer
-- Dynamic section display
+- Dynamic Section Display
 - Switch Article
 - Chart in JavaScript
 - Swiper in JavaScript
