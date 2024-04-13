@@ -19,7 +19,7 @@ Number of Page HTML : 1
 1. HTML
 2. CSS
 3. SCSS
-4. JavaScript
+4. JAVASCRIPT
 5. SWIPER.JS library
 6. CHART.JS library
 7. CANVA
